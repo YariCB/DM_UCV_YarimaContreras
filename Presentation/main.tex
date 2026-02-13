@@ -1,0 +1,601 @@
+\documentclass[10pt, xcolor=x11names,compress]{beamer}
+\usepackage{tabulary}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{biblatex}
+\usepackage[spanish, mexico]{babel}
+% Start custom color definition
+\definecolor{gnuhealth}{RGB}{21,110,182}
+% End custom color definition
+
+\usecolortheme{spruce}
+\useoutertheme{infolines}
+\usefonttheme[onlymath]{serif}
+\setbeamertemplate{headline}[default]
+\setbeamertemplate{navigation symbols}{}
+\mode<beamer>{\setbeamertemplate{blocks}[rounded]}
+\setbeamercovered{transparent}
+\setbeamercolor{block body}{use=structure, fg=gnuhealth, bg=gnuhealth!20}
+\setbeamercolor{block title}{use=structure, fg=gray!20, bg=gnuhealth}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=gray}
+\setbeamercolor{itemize subsubitem}{fg=black!20}
+
+% Start custom palette
+\setbeamercolor{palette primary}{fg=gnuhealth,bg=gray!15}
+\setbeamercolor{palette secondary}{fg=gnuhealth,bg=gnuhealth!15}
+\setbeamercolor{palette tertiary}{fg=gnuhealth!10,bg=gnuhealth}
+\setbeamercolor{structure}{fg=gnuhealth}
+\setbeamercolor{frametitle}{bg=gnuhealth!10}
+% End custom palette
+
+% Start commands to omit miniframes inclusion of section pages
+\makeatletter
+\let\beamer@writeslidentry@miniframeson=\beamer@writeslidentry%
+\def\beamer@writeslidentry@miniframesoff{%
+  \expandafter\beamer@ifempty\expandafter{\beamer@framestartpage}{}% does not happen normally
+  {%else
+    % removed \addtocontents commands
+    \clearpage\beamer@notesactions%
+  }
+}
+\newcommand*{\miniframeson}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframeson}
+\newcommand*{\miniframesoff}{\let\beamer@writeslidentry=\beamer@writeslidentry@miniframesoff}
+\makeatother
+
+% End commands to omit miniframes inclusion of section pages
+
+
+% Start presentation section pages
+\AtBeginSection[]{
+    {
+      \miniframesoff
+      \setbeamercolor{background canvas}{bg=gnuhealth}
+      \begin{frame}[plain]
+      \vfill
+      \centering
+        \usebeamerfont{title}\color{gnuhealth!10}{ \insertsectionhead}\par
+      \vfill
+      \end{frame}
+      \miniframeson
+    }
+}
+% End presentation section pages
+
+% Start config miniframes, header and footer
+\makeatletter\setbeamertemplate{footline}
+{  
+\leavevmode%  
+\hbox{%  
+\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%    
+\usebeamerfont{author in head/foot}
+\insertshortauthor%~~\beamer@ifempty{\insertshortinstitute}{}
+ \end{beamercolorbox}%  
+ \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{institute in head/foot}%    
+ \usebeamerfont{title in head/foot}\insertshortinstitute  
+ \end{beamercolorbox}%  
+ \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%    
+ \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{4em}
+ \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}   
+ \end{beamercolorbox}}%  
+ \vskip0pt%
+ }
+\makeatother 
+\useoutertheme[footline=empty, subsection=false]{miniframes}
+% End config miniframes, header and footer
+
+% Start presentation metadata
+\author[DM-6213]{Rafael Contreras Agudelo \\ Edwyn Guzmán \\ Yarima Contreras Blanco}
+\title{Introducción a Miner\'ia de datos}
+\institute[\textsl{Introducci\'on a miner\'ia de datos}]{
+    6213 - Miner\'ia de datos \\ \color{black!40} Facultad de ciencias \\ Universidad Central de Venezuela
+    \medskip
+}
+\date{\today}
+\bibliography{reference}
+% End presentation metadata
+
+% Start util snippets
+% Having placed a \begin{frame}[label=Rocky] you can use \hyperlink{Rocky}{\beamergotobutton{go}} to put a button to get you there
+
+% Insert image:
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.3\textwidth]{Figure1.jpg}
+%     \caption{His name is Rocky}
+%     \label{fig:enter-label}
+% \end{figure}
+
+% End util snippets
+
+\begin{document}
+
+% Start titlepage
+\begin{frame}[plain]
+\centering
+\includegraphics[width=0.12\textwidth]{logos/universidad.png}
+\hspace{0.71\textwidth}
+\includegraphics[width=0.12\textwidth]{logos/facultad.jpg}
+\vspace{0.10\textwidth}
+\titlepage
+\end{frame}
+% End titlepage
+
+
+% Start Table of content
+\setbeamertemplate{section in toc}[circle]
+\begin{frame}
+\frametitle{Contenido}
+\begin{columns}[c]
+\column{.5\textwidth}
+\setlength{\parskip}{2ex}
+ \tableofcontents
+\column{.45\textwidth}
+
+\color{black!40}\emph{
+"Notoriamente no hay clasificación del universo que no sea arbitraria y conjetural."\footnote{El idioma analítico de John Wilkins - Jorge Luis Borges}
+}\\~
+\color{black}
+
+\end{columns}
+\end{frame}
+% End Table of content
+
+% Start body of the presentation
+\section{Objetivo de la Miner\'ia de datos}
+\begin{frame}{Conceptos b\'asicos}
+\begin{description}
+    \item[Definici\'on] Es el proceso de \textbf{descubrir conocimiento} o \textbf{patrones} \\a partir de \textbf{datos}.\cite{DBLP:reference/db/2018}(*)
+\end{description}
+\end{frame}
+%-----
+\begin{frame}{Conceptos básicos}
+\begin{description}
+\item[Definición]<1-> Es el proceso de \textbf{descubrir conocimiento} o \textbf{patrones} \\a partir de \textbf{datos}.\cite{DBLP:reference/db/2018}(*)
+\item[Datos]<1->Abstracci\'on representada estructuradamente de uno o varios hechos.
+\end{description}
+%-----
+\begin{figure}
+    \centering
+    \includegraphics<2>[width=0.37\textwidth]{figs/data-1.png}
+    \label{fig:data-1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics<3>[height=0.4\textwidth]{figs/data-2.png}
+    \label{fig:data-1}
+\end{figure}
+\end{frame}
+%-----
+\section{Definici\'on del problema}
+\begin{frame}{Definici\'on del problema}
+\begin{description}
+\item[Definición]<1-> Es el proceso de \textbf{descubrir conocimiento} o \textbf{patrones} \\a partir de \textbf{datos}.\cite{DBLP:reference/db/2018}(*)
+
+\item[Datos]<1-> Abstracci\'on representada estructuradamente de uno o varios hechos.
+\item[Conocimiento]<1-> Información implicita, desconocida y potencialmente útil observadas en datos. \cite{aimag-v13i3-1011}
+\end{description}
+\vspace{2em}
+ \begin{columns}[c]<2>
+\column{.5\textwidth}
+\textbf{Ejemplos de datos}
+ \begin{itemize}
+     \item \# b\'usquedas de 'IA' en tiempo
+     \item Tweets de muestra de inter\'es
+     \item Series vistas por usuarios
+     \item<0> ${datos}_i $
+ \end{itemize}
+\column{.45\textwidth}
+\textbf{Ejemplos de conocimiento}
+ \begin{itemize}
+     \item Inter\'es acad\'emico en IA
+     \item Opini\'on p\'ublica*
+     \item \textsl{"You may also like"}
+     \item<0> ${conocimiento}_{ij}$
+ \end{itemize}
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conjuntos de datos}
+\begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+        \item<1> Datos multi-dimensionales
+        \item<1> Datos transaccionales
+        \item<1> Datos temporales
+        \item<0> Lenguaje natural
+        \item<0> Audio
+        \item<0> Im\'agenes
+        \item<0> Datos espaciales
+        \item<0> Datos orientados a gr\'afos
+    \end{itemize}
+    \column{0.45\textwidth}<1>
+    \begin{table}[c]
+     \centering
+     \begin{tabular}{c|c|c|c}
+         \textbf{ID} & \textbf{${atributo}_1$} & ... & \textbf{${atributo}_i$} \\
+         \hline
+          1 & ${val}_{1,1}$ & ... & ${val}_{1,i}$ \\
+          2 & ${val}_{2,1}$ & ... & ${val}_{2,i}$ \\
+     \end{tabular}
+     \caption{Estrutura ejemplo}
+     \label{tab:websites_visits}
+ \end{table}
+ \centering
+ $type({atributo}_i) \in [bool, enum, number, string, date]$
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conjuntos de datos}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Datos multi-dimensionales
+    \item<0> Datos transaccionales
+    \item<0> Datos temporales
+    \item<1> Lenguaje natural
+    \item<1> Audio
+    \item<1> Im\'agenes
+    \item<0> Datos espaciales
+    \item<0> Datos orientados a gr\'afos
+\end{itemize}
+    \column{0.45\textwidth}<1>
+    \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figs/datasets-1.png}
+    \label{fig:datasets-1}
+\end{figure}
+\end{columns}
+\end{frame}
+%-----
+\section[Taxonom\'ia de t\'ecnicas]{Taxonom\'ia de t\'ecnicas de MD}
+\begin{frame}{Tipos de conocimiento a extraer\cite{han2012mining}}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<1> Tareas descriptivas
+    \begin{itemize}
+        \item<1> Caracterizaci\'on de datos
+        \item<0> Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.45\textwidth}<1> 
+        \begin{figure}[c]
+    \centering
+    \includegraphics[width=.8\textwidth]{figs/descr-1.png}
+    \label{fig:descr-1}
+\end{figure}
+ \centering
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<1> Tareas descriptivas\footnote{\color{gnuhealth!60}kaggle.com/search?q=eda}
+    \begin{itemize}
+        \item<0> Caracterizaci\'on de datos
+        \item<1> Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.45\textwidth}<1> 
+        \begin{figure}[c]
+    \centering
+    \includegraphics[width=.8\textwidth]{figs/descr-2.png}
+    \label{fig:descr-2}
+\end{figure}
+ \centering
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<1> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.45\textwidth}<1>
+        \begin{table}[c]
+     \centering
+     \begin{tabular}{c|c|c|c}
+         \textbf{ID} & ... & \textbf{${atributo}_i$} & \textsl{objetivo}\\
+         \hline
+          1 & ... & ${val}_{1,i}$ & ${obj}_{1}$\\
+          2 & ... & ${val}_{2,i}$ & ${obj}_{2}$\\
+     \end{tabular}
+     \caption{Estrutura ejemplo}
+     \label{tab:websites_visits}
+ \end{table}
+ \centering
+ $type({obj}_i) = enum \rightarrow$ clasificaci\'on
+ $type({obj}_i) = number \rightarrow$ regresi\'on
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.45\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<1> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.5\textwidth}<1>
+    \textbf{Ejemplo de aplicaciones}
+    \begin{itemize}
+        \item Determinar la categoría de una p\'agina web
+        \item Identificar el sentimiento predominante de un tweet
+        \item Categorizar candidatos a cr\'editos bancarios
+        \item Estimar el costo de un inmueble
+        \item Estimar el crecimiento de una compa\~n\'ia
+        \item Estimar la popularidad de una canci\'on en spotify\footnote{\color{gnuhealth!60}\href{https://hf.co/datasets/maharshipandya/spotify-tracks-dataset}{hf.co/datasets/maharshipandya/spotify-tracks-dataset}}
+    \end{itemize}
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<1> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.45\textwidth}<1> 
+        \begin{figure}[c]
+    \centering
+    \includegraphics[width=.8\textwidth]{figs/agrup-1.png}
+    \label{fig:agrup-1}
+\end{figure}
+ \centering
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<1> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.45\textwidth}<1> 
+        \begin{figure}[c]
+    \centering
+    \includegraphics[width=.8\textwidth]{figs/agrup-2.png}
+    \label{fig:agrup-2}
+\end{figure}
+ \centering
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<1> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+\column{0.5\textwidth}<1>
+    \textbf{Ejemplo de aplicaciones}
+    \begin{itemize}
+        \item Segmentaci\'on de clientes
+        \item Agrupaci\'on de tweets por semajanza sem\'antica\footnote{\color{gnuhealth!60}\href{https://sbert.net}{sbert.net}}
+        \item Agrupar estudiantes con desempe\~nos similares
+    \end{itemize}
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<1> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.45\textwidth}<1> 
+        \begin{figure}[c]
+    \centering
+    \includegraphics[width=.8\textwidth]{figs/outl-1.png}
+    \label{fig:outl-1}
+\end{figure}
+ \centering
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<1> Detecci\'on de anomal\'ias
+    \item<0> Asociaciones
+\end{itemize}
+    \column{0.5\textwidth}<1>
+    \textbf{Ejemplo de aplicaciones}
+    \begin{itemize}
+        \item Detecci\'on de ataques a servidores
+        \item Detecci\'on de fraudes bancarios
+        \item Identificar las fallas de un servicio de telefonía móvil
+    \end{itemize}
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<1> Asociaciones
+\end{itemize}
+    \column{0.45\textwidth}<1> 
+        \begin{figure}[c]
+    \centering
+    \includegraphics[width=\textwidth]{figs/asoc-1.png}
+    \label{fig:asoc-1}
+\end{figure}
+ \centering
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Tipos de conocimiento a extraer}
+\begin{columns}
+    \column{0.5\textwidth}
+\begin{itemize}
+    \item<0> Tareas descriptivas
+    \begin{itemize}
+        \item Caracterizaci\'on de datos
+        \item Discriminaci\'on de datos
+    \end{itemize}
+    \item<0> Tareas predictivas
+    \begin{itemize}
+        \item Clasificaci\'on
+        \item Regresi\'on
+    \end{itemize}
+    \item<0> Agrupaci\'on
+    \item<0> Detecci\'on de anomal\'ias
+    \item<1> Asociaciones
+\end{itemize}
+    \column{0.5\textwidth}<1>
+    \textbf{Ejemplo de aplicaciones}
+    \begin{itemize}
+        \item \textsl{"Tambi\'en te puede gustar"}
+        \item Detecci\'on de ocurrencias probables/improbables
+    \end{itemize}
+\end{columns}
+\end{frame}
+%-----
+\begin{frame}{Resumen}
+\begin{columns}
+    \column{.25\textwidth}
+    \column{.5\textwidth}
+    \begin{block}{Miner\'ia de datos}
+    Descubrir conocimiento y/o patrones a partir de datos.*
+\end{block}
+\column{.25\textwidth}
+\end{columns}
+    
+\end{frame}
+%-----
+\begin{frame}{Referencias}
+\noindent\printbibliography
+\end{frame}
+
+\begin{frame}
+ \begin{center}
+		{\Huge ¡Gracias!}\\
+		\bigskip\bigskip % Vertical whitespace
+		
+		{\LARGE dm-25.ucv.ai}
+		
+	\end{center}
+\end{frame}
+
+\end{document}
