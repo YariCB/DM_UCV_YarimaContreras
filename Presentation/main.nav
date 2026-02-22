@@ -4,14 +4,14 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Objetivo de la Miner\'ia de datos}{3}{Objetivo de la Miner\'ia de datos}{0}}
+\headcommand {\sectionentry {1}{Introducci\'on y Objetivos}{3}{Introducci\'on y Objetivos}{0}}
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{0}{3}{5/7}{}{0}}
 \headcommand {\beamer@framepages {5}{7}}
 \headcommand {\beamer@sectionpages {3}{7}}
 \headcommand {\beamer@subsectionpages {3}{7}}
-\headcommand {\sectionentry {2}{Definici\'on del problema}{8}{Definici\'on del problema}{0}}
+\headcommand {\sectionentry {2}{Metodolog\'ia CRISP-DM}{8}{Metodolog\'ia CRISP-DM}{0}}
 \headcommand {\slideentry {2}{0}{2}{9/10}{}{0}}
 \headcommand {\beamer@framepages {9}{10}}
 \headcommand {\slideentry {2}{0}{3}{11/11}{}{0}}
@@ -20,7 +20,7 @@
 \headcommand {\beamer@framepages {12}{12}}
 \headcommand {\beamer@sectionpages {8}{12}}
 \headcommand {\beamer@subsectionpages {8}{12}}
-\headcommand {\sectionentry {3}{Taxonom\'ia de t\'ecnicas}{13}{Taxonom\'ia de t\'ecnicas de MD}{0}}
+\headcommand {\sectionentry {3}{Comprensi\'on del Negocio y los Datos}{13}{Comprensi\'on del Negocio y los Datos}{0}}
 \headcommand {\slideentry {3}{0}{2}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\slideentry {3}{0}{3}{15/15}{}{0}}
@@ -43,17 +43,29 @@
 \headcommand {\beamer@framepages {23}{23}}
 \headcommand {\slideentry {3}{0}{12}{24/24}{}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {3}{0}{13}{25/25}{}{0}}
-\headcommand {\beamer@framepages {25}{25}}
-\headcommand {\beamer@sectionpages {13}{25}}
-\headcommand {\beamer@subsectionpages {13}{25}}
-\headcommand {\sectionentry {4}{Referencias}{26}{Referencias}{0}}
-\headcommand {\slideentry {4}{0}{0}{26/26}{}{0}}
-\headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {4}{0}{1}{27/27}{}{0}}
-\headcommand {\beamer@framepages {27}{27}}
-\headcommand {\beamer@partpages {1}{27}}
-\headcommand {\beamer@subsectionpages {13}{27}}
-\headcommand {\beamer@sectionpages {13}{27}}
-\headcommand {\beamer@documentpages {27}}
-\headcommand {\gdef \inserttotalframenumber {24}}
+\headcommand {\beamer@sectionpages {13}{24}}
+\headcommand {\beamer@subsectionpages {13}{24}}
+\headcommand {\sectionentry {4}{Preprocesamiento de Datos}{25}{Preprocesamiento de Datos}{0}}
+\headcommand {\beamer@sectionpages {25}{25}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\sectionentry {5}{An\'alisis Exploratorio de Datos (EDA)}{26}{An\'alisis Exploratorio de Datos (EDA)}{0}}
+\headcommand {\beamer@sectionpages {26}{26}}
+\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\sectionentry {6}{Modelado y Evaluaci\'on}{27}{Modelado y Evaluaci\'on}{0}}
+\headcommand {\beamer@sectionpages {27}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\sectionentry {7}{Conclusiones}{28}{Conclusiones}{0}}
+\headcommand {\slideentry {7}{0}{2}{29/29}{}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\beamer@sectionpages {28}{29}}
+\headcommand {\beamer@subsectionpages {28}{29}}
+\headcommand {\sectionentry {8}{Referencias}{30}{Referencias}{0}}
+\headcommand {\slideentry {8}{0}{0}{30/30}{}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {8}{0}{1}{31/31}{}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@partpages {1}{31}}
+\headcommand {\beamer@subsectionpages {28}{31}}
+\headcommand {\beamer@sectionpages {28}{31}}
+\headcommand {\beamer@documentpages {31}}
+\headcommand {\gdef \inserttotalframenumber {28}}
