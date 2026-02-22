@@ -90,8 +90,8 @@
 
 % Start presentation metadata
 \author[DM-6213]{Rafael Contreras Agudelo \\ Edwyn Guzmán \\ Yarima Contreras Blanco}
-\title{Introducción a Miner\'ia de datos}
-\institute[\textsl{Introducci\'on a miner\'ia de datos}]{
+\title{Presentaci\'on de Miner\'ia de datos \\ \'Exitos de Spotify}
+\institute[\textsl{Presentaci\'on de Miner\'ia de Datos}]{
     6213 - Miner\'ia de datos \\ \color{black!40} Facultad de ciencias \\ Universidad Central de Venezuela
     \medskip
 }
@@ -147,17 +147,45 @@
 
 % Start body of the presentation
 \section{Introducci\'on y Objetivos}
-\begin{frame}{Conceptos b\'asicos}
-\begin{description}
-    \item[Definici\'on] Es el proceso de \textbf{descubrir conocimiento} o \textbf{patrones} \\a partir de \textbf{datos}.\cite{DBLP:reference/db/2018}(*)
-\end{description}
+% --- Lámina 1: Contexto del Negocio ---
+\begin{frame}{Introducción: Contexto del Negocio}
+    \begin{itemize}
+        \item <1-> \textbf{Plataformas Digitales:} Spotify genera millones de puntos de datos diarios sobre el comportamiento del usuario.
+        \vspace{1em}
+        \item <1-> \textbf{Competitividad:} Con miles de lanzamientos diarios, destacar un track requiere más que solo intuición artística.
+    \end{itemize}
+    \vspace{1em}
+    \begin{block}{Oportunidad}
+        El uso de \textbf{Minería de Datos} permite transformar características musicales en ventajas competitivas para sellos y artistas.
+    \end{block}
 \end{frame}
-%-----
-\begin{frame}{Conceptos básicos}
-\begin{description}
-\item[Definición]<1-> Es el proceso de \textbf{descubrir conocimiento} o \textbf{patrones} \\a partir de \textbf{datos}.\cite{DBLP:reference/db/2018}(*)
-\item[Datos]<1->Abstracci\'on representada estructuradamente de uno o varios hechos.
-\end{description}
+% --- Lámina 2: Definición del Problema ---
+\begin{frame}{Definición del Problema}
+    \begin{description}
+        \item[Desafío] Predecir el éxito (popularidad) de una canción antes o durante su lanzamiento. 
+        \item[Incertidumbre] Las inversiones en marketing musical suelen ser de alto riesgo sin un respaldo analítico de los datos.
+    \end{description}
+    
+    \vspace{1em}
+    \textbf{Pregunta de Investigación:}
+    \vspace{0.5em}
+    \par¿Es posible determinar el \textit{ranking} de una canción basándose en sus atributos técnicos como el tempo, la energía y la bailabilidad?
+\end{frame}
+%----- Lámina 3: Objetivos ---
+\begin{frame}{Objetivos}
+    \textbf{Objetivo General:}
+    \vspace{0.5em}
+    \begin{itemize}
+        \item Aplicar el proceso de minería de datos para predecir el ranking de tracks de Spotify utilizando la metodología CRISP-DM.
+    \end{itemize}
+    \vspace{1em}
+    \textbf{Objetivos Específicos:}
+    \vspace{0.5em}
+    \begin{itemize}
+        \item Ejecutar el preprocesamiento y limpieza del dataset.
+        \item Realizar un análisis exploratorio de datos (EDA) para identificar patrones y relaciones entre variables.
+        \item Desarrollar un modelo predictivo para pronosticar el ranking de una canción.
+    \end{itemize}
 %-----
 \begin{figure}
     \centering

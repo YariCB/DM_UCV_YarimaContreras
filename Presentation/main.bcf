@@ -2374,14 +2374,10 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">DBLP:reference/db/2018</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">DBLP:reference/db/2018</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">aimag-v13i3-1011</bcf:citekey>
     <bcf:citekey order="3" intorder="1">DBLP:reference/db/2018</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">DBLP:reference/db/2018</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">DBLP:reference/db/2018</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">aimag-v13i3-1011</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">DBLP:reference/db/2018</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">aimag-v13i3-1011</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">han2012mining</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">aimag-v13i3-1011</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">han2012mining</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
