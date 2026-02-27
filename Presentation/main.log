@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  27 FEB 2026 00:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  27 FEB 2026 19:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1262,7 +1262,7 @@ Overfull \hbox (122.34482pt too wide) detected at line 231
 [12
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 235
+Overfull \hbox (122.34482pt too wide) detected at line 248
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1274,7 +1274,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 256
+Overfull \hbox (122.34482pt too wide) detected at line 273
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1286,14 +1286,14 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 283
+Overfull \hbox (122.34482pt too wide) detected at line 300
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 <figs/descr-1.png, id=834, 411.5375pt x 274.02374pt>
 File: figs/descr-1.png Graphic file (type png)
 <use figs/descr-1.png>
-Package pdftex.def Info: figs/descr-1.png  used on input line 283.
+Package pdftex.def Info: figs/descr-1.png  used on input line 300.
 (pdftex.def)             Requested size: 123.90994pt x 82.50462pt.
 
 Overfull \hbox (122.34482pt too wide) has occurred while \output is active
@@ -1303,14 +1303,14 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [15
 
  <./figs/descr-1.png>]
-Overfull \hbox (122.34482pt too wide) detected at line 311
+Overfull \hbox (122.34482pt too wide) detected at line 328
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 <figs/descr-2.png, id=899, 411.5375pt x 274.02374pt>
 File: figs/descr-2.png Graphic file (type png)
 <use figs/descr-2.png>
-Package pdftex.def Info: figs/descr-2.png  used on input line 311.
+Package pdftex.def Info: figs/descr-2.png  used on input line 328.
 (pdftex.def)             Requested size: 123.90994pt x 82.50462pt.
 
 Overfull \hbox (122.34482pt too wide) has occurred while \output is active
@@ -1320,7 +1320,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [16
 
  <./figs/descr-2.png>]
-Overfull \hbox (122.34482pt too wide) detected at line 347
+Overfull \hbox (122.34482pt too wide) detected at line 364
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1332,7 +1332,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 378
+Overfull \hbox (122.34482pt too wide) detected at line 395
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1344,14 +1344,14 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 406
+Overfull \hbox (122.34482pt too wide) detected at line 423
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 <figs/agrup-1.png, id=1090, 372.1905pt x 281.1303pt>
 File: figs/agrup-1.png Graphic file (type png)
 <use figs/agrup-1.png>
-Package pdftex.def Info: figs/agrup-1.png  used on input line 406.
+Package pdftex.def Info: figs/agrup-1.png  used on input line 423.
 (pdftex.def)             Requested size: 123.90994pt x 93.5926pt.
 
 Overfull \hbox (122.34482pt too wide) has occurred while \output is active
@@ -1361,14 +1361,14 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [19
 
  <./figs/agrup-1.png>]
-Overfull \hbox (122.34482pt too wide) detected at line 434
+Overfull \hbox (122.34482pt too wide) detected at line 451
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 <figs/agrup-2.png, id=1154, 372.1905pt x 281.1303pt>
 File: figs/agrup-2.png Graphic file (type png)
 <use figs/agrup-2.png>
-Package pdftex.def Info: figs/agrup-2.png  used on input line 434.
+Package pdftex.def Info: figs/agrup-2.png  used on input line 451.
 (pdftex.def)             Requested size: 123.90994pt x 93.5926pt.
 
 Overfull \hbox (122.34482pt too wide) has occurred while \output is active
@@ -1378,7 +1378,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [20
 
  <./figs/agrup-2.png>]
-Overfull \hbox (122.34482pt too wide) detected at line 462
+Overfull \hbox (122.34482pt too wide) detected at line 479
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1390,14 +1390,14 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 490
+Overfull \hbox (122.34482pt too wide) detected at line 507
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 <figs/outl-1.png, id=1278, 450.68375pt x 341.275pt>
 File: figs/outl-1.png Graphic file (type png)
 <use figs/outl-1.png>
-Package pdftex.def Info: figs/outl-1.png  used on input line 490.
+Package pdftex.def Info: figs/outl-1.png  used on input line 507.
 (pdftex.def)             Requested size: 123.90994pt x 93.82747pt.
 
 Overfull \hbox (122.34482pt too wide) has occurred while \output is active
@@ -1407,7 +1407,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [22
 
  <./figs/outl-1.png>]
-Overfull \hbox (122.34482pt too wide) detected at line 518
+Overfull \hbox (122.34482pt too wide) detected at line 535
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1419,14 +1419,14 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [23
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 546
+Overfull \hbox (122.34482pt too wide) detected at line 563
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 <figs/asoc-1.png, id=1401, 718.685pt x 302.12875pt>
 File: figs/asoc-1.png Graphic file (type png)
 <use figs/asoc-1.png>
-Package pdftex.def Info: figs/asoc-1.png  used on input line 546.
+Package pdftex.def Info: figs/asoc-1.png  used on input line 563.
 (pdftex.def)             Requested size: 154.88684pt x 65.11314pt.
 
 Overfull \hbox (122.34482pt too wide) has occurred while \output is active
@@ -1436,7 +1436,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [24
 
  <./figs/asoc-1.png>]
-Overfull \hbox (122.34482pt too wide) detected at line 573
+Overfull \hbox (122.34482pt too wide) detected at line 590
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1448,35 +1448,35 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 575
+Overfull \hbox (122.34482pt too wide) detected at line 592
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 [26
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 577
+Overfull \hbox (122.34482pt too wide) detected at line 594
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 [27
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 579
+Overfull \hbox (122.34482pt too wide) detected at line 596
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 [28
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 581
+Overfull \hbox (122.34482pt too wide) detected at line 598
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
 [29
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 593
+Overfull \hbox (122.34482pt too wide) detected at line 610
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1488,7 +1488,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [30
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 597
+Overfull \hbox (122.34482pt too wide) detected at line 614
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1500,7 +1500,7 @@ Overfull \hbox (122.34482pt too wide) has occurred while \output is active
 [31
 
 ]
-Overfull \hbox (122.34482pt too wide) detected at line 607
+Overfull \hbox (122.34482pt too wide) detected at line 624
   [] [][][][] [][][] [][][][][][][][][][][][][][] [] [] [] [][] [][]  
  []
 
@@ -1537,15 +1537,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35420 strings out of 467865
- 740614 string characters out of 5418304
- 1544798 words of memory out of 5000000
- 63662 multiletter control sequences out of 15000+600000
+ 35422 strings out of 467865
+ 740644 string characters out of 5418304
+ 1544852 words of memory out of 5000000
+ 63664 multiletter control sequences out of 15000+600000
  639273 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,123p,803b,2640s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (32 pages, 1598028 bytes).
+Output written on main.pdf (32 pages, 1601938 bytes).
 PDF statistics:
  1893 PDF objects out of 2073 (max. 8388607)
  81 named destinations out of 1000 (max. 500000)

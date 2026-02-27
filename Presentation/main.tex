@@ -90,7 +90,7 @@
 
 % Start presentation metadata
 \author[DM-6213]{Rafael Contreras Agudelo \\ Edwyn Guzmán \\ Yarima Contreras Blanco}
-\title{Presentaci\'on de Miner\'ia de datos \\ \'Exitos de Spotify}
+\title{Presentaci\'on de Miner\'ia de datos \\ Spotify Tracks Dataset}
 \institute[\textsl{Presentaci\'on de Miner\'ia de Datos}]{
     6213 - Miner\'ia de datos \\ \color{black!40} Facultad de ciencias \\ Universidad Central de Venezuela
     \medskip
@@ -231,27 +231,44 @@
 \section[Comprensi\'on del Negocio y los Datos]{Comprensi\'on del Negocio y los Datos}
 %----- Lámina 6: Comprensión del Negocio ---
 \begin{frame}{Fase I: Comprensión del Negocio}
+    \begin{block}{Objetivo de Minería de Datos}
+        Transformar los atributos acústicos de los tracks en un valor numérico de \texttt{popularity} mediante un modelo de \textbf{regresión}, permitiendo predecir el rendimiento comercial de una canción.
+    \end{block}
     
+    \vspace{0.5cm}
+    \textbf{Criterios de Éxito del Proyecto:}
+    \begin{itemize}
+        \item \textbf{Técnico:} Lograr un modelo con un margen de error aceptable que permita diferenciar canciones con alto potencial de aquellas con bajo impacto.
+        \item \textbf{De Negocio:} Identificar los patrones históricos que correlacionan el "sonido" (variables flotantes) con el éxito, para reducir el riesgo en la toma de decisiones de inversión.
+    \end{itemize}
+    
+    \vspace{0.5cm}
+    \textbf{Meta Final:}
+    \par Generar una herramienta analítica que determine si una canción será un éxito basándose en su composición técnica.
 \end{frame}
 %----- Lámina 7: Comprensión de los Datos ---
 \begin{frame}{Fase II: Comprensión de los Datos}
-    \textbf{Origen del Dataset:} Spotify Tracks Dataset \href{https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset}{(Kaggle)}.
+    \textbf{Origen del Dataset:} Spotify Tracks Dataset \href{https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset}{\textcolor{blue}{(Kaggle)}}.
     \begin{itemize}
-        \item \textbf{Volumen:} Aproximadamente 114,000 registros.
-        \item \textbf{Variables:} 21 características (numéricas, categóricas y booleanas).
+        \item \textbf{Observaciones:} 114.000 registros.
+        \item \textbf{Variables:} 21 columnas.
     \end{itemize}
 
+    \vspace{1.5em}
+    \textbf{Esquema del dataset:}
+    \vspace{-1em}
     \begin{table}[]
         \centering
         \resizebox{\textwidth}{!}{
-        \begin{tabular}{|l|l|}
+        \begin{tabular}{|l|p{10cm}|} % Se ajusta el ancho para evitar que se salga
         \hline
-        \textbf{Tipo de Variable} & \textbf{Ejemplos} \\ \hline
-        Metadatos & \texttt{track\_id}, \texttt{artists}, \texttt{album\_name} \\ \hline
-        Acústicas (Predictoras) & \texttt{danceability}, \texttt{energy}, \texttt{loudness}, \texttt{tempo} \\ \hline
-        Objetivo (Target) & \texttt{popularity} \\ \hline
+        \textbf{Tipo de Dato} & \textbf{Variables} \\ \hline
+        Entero (int64) & \texttt{\#}, \texttt{popularity}, \texttt{duration\_ms}, \texttt{key}, \texttt{mode}, \texttt{time\_signature} \\ \hline
+        Texto (object) & \texttt{track\_id}, \texttt{artists}, \texttt{album\_name}, \texttt{track\_name}, \texttt{track\_genre} \\ \hline
+        Lógico (bool) & \texttt{explicit} \\ \hline
+        Flotante (float64) & \texttt{danceability}, \texttt{energy}, \texttt{loudness}, \texttt{speechiness}, \texttt{acousticness}, \texttt{instrumentalness}, \texttt{liveness}, \texttt{valence}, \texttt{tempo} \\ \hline
         \end{tabular}}
-        \caption{Estructura simplificada del dataset escogido.}
+        \caption{Tipos de datos por columna del dataset escogido.}
     \end{table}
 \end{frame}
 \begin{frame}{Tipos de conocimiento a extraer\cite{han2012mining}}
