@@ -146,12 +146,15 @@
 % End Table of content
 
 % Start body of the presentation
+%----- Sección de Introducción y Objetivos ---
 \section{Introducci\'on y Objetivos}
 % --- Lámina 1: Contexto del Negocio ---
 \begin{frame}{Introducción: Contexto del Negocio}
     \begin{itemize}
+        \item <1-> \textbf{Decisión de Inversión:} En la industria musical, predecir si un track será un éxito es vital para determinar el destino de los recursos.
+        \vspace{0.8em}
         \item <1-> \textbf{Plataformas Digitales:} Spotify genera millones de puntos de datos diarios sobre el comportamiento del usuario.
-        \vspace{1em}
+        \vspace{0.8em}
         \item <1-> \textbf{Competitividad:} Con miles de lanzamientos diarios, destacar un track requiere más que solo intuición artística.
     \end{itemize}
     \vspace{1em}
@@ -186,102 +189,71 @@
         \item Realizar un análisis exploratorio de datos (EDA) para identificar patrones y relaciones entre variables.
         \item Desarrollar un modelo predictivo para pronosticar el ranking de una canción.
     \end{itemize}
-%-----
-\begin{figure}
-    \centering
-    \includegraphics<2>[width=0.37\textwidth]{figs/data-1.png}
-    \label{fig:data-1}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics<3>[height=0.4\textwidth]{figs/data-2.png}
-    \label{fig:data-1}
-\end{figure}
 \end{frame}
-%-----
+%----- Sección de Metodología ---
 \section{Metodolog\'ia CRISP-DM}
-\begin{frame}{Metodolog\'ia CRISP-DM}
-\begin{description}
-\item[Definición]<1-> Es el proceso de \textbf{descubrir conocimiento} o \textbf{patrones} \\a partir de \textbf{datos}.\cite{DBLP:reference/db/2018}(*)
-
-\item[Datos]<1-> Abstracci\'on representada estructuradamente de uno o varios hechos.
-\item[Conocimiento]<1-> Información implicita, desconocida y potencialmente útil observadas en datos. \cite{aimag-v13i3-1011}
-\end{description}
-\vspace{2em}
- \begin{columns}[c]<2>
-\column{.5\textwidth}
-\textbf{Ejemplos de datos}
- \begin{itemize}
-     \item \# b\'usquedas de 'IA' en tiempo
-     \item Tweets de muestra de inter\'es
-     \item Series vistas por usuarios
-     \item<0> ${datos}_i $
- \end{itemize}
-\column{.45\textwidth}
-\textbf{Ejemplos de conocimiento}
- \begin{itemize}
-     \item Inter\'es acad\'emico en IA
-     \item Opini\'on p\'ublica*
-     \item \textsl{"You may also like"}
-     \item<0> ${conocimiento}_{ij}$
- \end{itemize}
-\end{columns}
+%----- Lámina 4: Características de CRISP-DM ---
+\begin{frame}{Metodología CRISP-DM: Características}
+    \begin{columns}[c]
+        \column{.5\textwidth}
+        \begin{itemize}
+            \item <1-> \textbf{Estándar de la Industria:} Es el modelo de proceso más utilizado para proyectos de Minería de Datos.
+            \vspace{0.8em}
+            \item <2-> \textbf{Ciclo Iterativo:} Permite retroceder entre fases para garantizar la calidad del modelo final.
+            \vspace{0.8em}
+            \item <3-> \textbf{Enfoque en el Negocio:} No solo se centra en el algoritmo, sino en resolver un problema real.
+        \end{itemize}
+        
+        \column{.45\textwidth}
+        \begin{figure}
+            \centering
+            % Asegúrate de tener la imagen en tu carpeta de archivos
+            \includegraphics[width=\textwidth]{figs/CRISP-DM.jpg}
+            \caption{\footnotesize Ciclo de vida CRISP-DM.}
+        \end{figure}
+    \end{columns}
 \end{frame}
-%-----
-\begin{frame}{Tipos de conjuntos de datos}
-\begin{columns}
-    \column{0.5\textwidth}
-    \begin{itemize}
-        \item<1> Datos multi-dimensionales
-        \item<1> Datos transaccionales
-        \item<1> Datos temporales
-        \item<0> Lenguaje natural
-        \item<0> Audio
-        \item<0> Im\'agenes
-        \item<0> Datos espaciales
-        \item<0> Datos orientados a gr\'afos
-    \end{itemize}
-    \column{0.45\textwidth}<1>
-    \begin{table}[c]
-     \centering
-     \begin{tabular}{c|c|c|c}
-         \textbf{ID} & \textbf{${atributo}_1$} & ... & \textbf{${atributo}_i$} \\
-         \hline
-          1 & ${val}_{1,1}$ & ... & ${val}_{1,i}$ \\
-          2 & ${val}_{2,1}$ & ... & ${val}_{2,i}$ \\
-     \end{tabular}
-     \caption{Estrutura ejemplo}
-     \label{tab:websites_visits}
- \end{table}
- \centering
- $type({atributo}_i) \in [bool, enum, number, string, date]$
-\end{columns}
+%----- Lámina 5: Justificación de la Metodología ---
+\begin{frame}{Justificación de la Metodología}
+    \begin{block}{Motivo de elección}
+        Se selecciona esta metodología por su capacidad para estructurar un proceso completo desde la comprensión del negocio y de los datos técnicos hasta la predicción de resultados.
+    \end{block}
+    \vspace{0.5cm}
+    \textbf{Ventajas de su utilización:}
+    \vspace{0.8em}
+    \begin{enumerate}
+        \item \textbf{Flexibilidad:} Ideal para ajustar el preprocesamiento de variables acústicas según los hallazgos del EDA.
+        \item \textbf{Evaluación Continua:} Permite validar si las métricas de regresión responden correctamente a la meta de negocio (predecir el ranking).
+        \item \textbf{Estructura:} Facilita la transición entre el análisis exploratorio y el modelado de regresión propuesto.
+    \end{enumerate}
 \end{frame}
-%-----
-\begin{frame}{Tipos de conjuntos de datos}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Datos multi-dimensionales
-    \item<0> Datos transaccionales
-    \item<0> Datos temporales
-    \item<1> Lenguaje natural
-    \item<1> Audio
-    \item<1> Im\'agenes
-    \item<0> Datos espaciales
-    \item<0> Datos orientados a gr\'afos
-\end{itemize}
-    \column{0.45\textwidth}<1>
-    \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{figs/datasets-1.png}
-    \label{fig:datasets-1}
-\end{figure}
-\end{columns}
-\end{frame}
-%-----
+%----- Sección de Comprensión del Negocio y los Datos ---
 \section[Comprensi\'on del Negocio y los Datos]{Comprensi\'on del Negocio y los Datos}
+%----- Lámina 6: Comprensión del Negocio ---
+\begin{frame}{Fase I: Comprensión del Negocio}
+    
+\end{frame}
+%----- Lámina 7: Comprensión de los Datos ---
+\begin{frame}{Fase II: Comprensión de los Datos}
+    \textbf{Origen del Dataset:} Spotify Tracks Dataset \href{https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset}{(Kaggle)}.
+    \begin{itemize}
+        \item \textbf{Volumen:} Aproximadamente 114,000 registros.
+        \item \textbf{Variables:} 21 características (numéricas, categóricas y booleanas).
+    \end{itemize}
+
+    \begin{table}[]
+        \centering
+        \resizebox{\textwidth}{!}{
+        \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Tipo de Variable} & \textbf{Ejemplos} \\ \hline
+        Metadatos & \texttt{track\_id}, \texttt{artists}, \texttt{album\_name} \\ \hline
+        Acústicas (Predictoras) & \texttt{danceability}, \texttt{energy}, \texttt{loudness}, \texttt{tempo} \\ \hline
+        Objetivo (Target) & \texttt{popularity} \\ \hline
+        \end{tabular}}
+        \caption{Estructura simplificada del dataset escogido.}
+    \end{table}
+\end{frame}
 \begin{frame}{Tipos de conocimiento a extraer\cite{han2012mining}}
 \begin{columns}
     \column{0.5\textwidth}

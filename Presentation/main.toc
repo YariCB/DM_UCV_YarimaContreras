@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Introducci\'on y Objetivos}{3}{0}{1}
-\beamer@sectionintoc {2}{Metodolog\'ia CRISP-DM}{9}{0}{2}
-\beamer@sectionintoc {3}{Comprensi\'on del Negocio y los Datos}{14}{0}{3}
+\beamer@sectionintoc {2}{Metodolog\'ia CRISP-DM}{7}{0}{2}
+\beamer@sectionintoc {3}{Comprensi\'on del Negocio y los Datos}{12}{0}{3}
 \beamer@sectionintoc {4}{Preprocesamiento de Datos}{26}{0}{4}
 \beamer@sectionintoc {5}{An\'alisis Exploratorio de Datos (EDA)}{27}{0}{5}
 \beamer@sectionintoc {6}{Modelado y Evaluaci\'on}{28}{0}{6}
