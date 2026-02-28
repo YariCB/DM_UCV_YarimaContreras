@@ -548,54 +548,76 @@
 \end{columns}
 \end{frame}
 %----- Lámina 22: Decisiones ---
-\begin{frame}{EDA: Decisiones de Tratamiento}
+\begin{frame}{Decisiones de Tratamiento}
 \begin{columns}
-    % Columna Izquierda: Puntos de decisión
+    % Columna Izquierda: Imágenes dinámicas
+    \column{0.50\textwidth}
+    \centering
+    % Imagen para el punto 1: Histograma original vs filtrado
+    \only<1>{
+        \begin{figure}
+            \includegraphics[width=\textwidth]{figs/popularity_withFewerZeros.png}
+            \caption{\footnotesize Reducción de ceros en la distribución.}
+        \end{figure}
+    }
+    % Imagen para el punto 2: Heatmap reducido o variables independientes
+    \only<2>{
+        \begin{figure}
+            \includegraphics[width=\textwidth]{figs/heatmap_clean.png}
+            \caption{\footnotesize Matriz de características optimizada.}
+        \end{figure}
+    }
+    % Columna Derecha: Puntos de decisión
     \column{0.45\textwidth}
     \begin{itemize}
         \item<1-> \textbf{Tratamiento del Sesgo (Target)}
         \begin{itemize}
             \item <1-> Eliminación de registros con popularidad 0, se mantuvo el 15\% para evitar el sesgo predictivo.
         \end{itemize}
-        
         \vspace{0.5em}
         \item<2-> \textbf{Selección de Características}
         \begin{itemize}
             \item <2-> Remoción de \texttt{loudness} por multicolinealidad con \texttt{energy}.
             \item <2-> Exclusión de \texttt{key} debido a su nula correlación con el éxito.
         \end{itemize}
-
-        \vspace{0.5em}
-        \item<3-> \textbf{Partición y Escalado}
-        \begin{itemize}
-            \item <3-> División 80/20 (Train/Test).
-            \item <3-> \textit{StandardScaler} para normalizar magnitudes y evitar el \textit{Data Leakage}.
-        \end{itemize}
     \end{itemize}
-    % Columna Derecha: Imágenes dinámicas
-    \column{0.50\textwidth}
+\end{columns}
+\end{frame}
+%----- Lámina 23: Decisiones - Continuación ---
+\begin{frame}{Decisiones de Tratamiento}
+\begin{columns}
+    % Columna Izquierda: Imágenes dinámicas
+    \column{0.45\textwidth}
     \centering
-    % Imagen para el punto 1: Histograma original vs filtrado
+    % Imagen para el punto 1: Partición/Escalado
     \only<1>{
         \begin{figure}
-            \includegraphics[width=\textwidth]{figs/data-1.png}
-            \caption{\footnotesize Reducción de ruido en el target.}
+            \includegraphics[width=0.8\textwidth]{figs/outliers_clean.png}
+            \caption{\footnotesize Filtrado de valores atípicos.}
         \end{figure}
     }
-    % Imagen para el punto 2: Heatmap reducido o variables independientes
+    % Imagen para el punto 2: Selección de variables
     \only<2>{
         \begin{figure}
-            \includegraphics[width=\textwidth]{figs/heatmap_cleaned.png}
-            \caption{\footnotesize Matriz de características optimizada.}
+            \includegraphics[width=\textwidth]{figs/trainTestSplit.png}
+            \caption{\footnotesize Preparación de datos para entrenamiento.}
         \end{figure}
     }
-    % Imagen para el punto 3: Código de partición o esquema Train/Test
-    \only<3>{
-        \begin{figure}
-            \includegraphics[width=\textwidth]{figs/data-1.png}
-            \caption{\footnotesize Pipeline de preparación de datos.}
-        \end{figure}
-    }
+    % Columna : Puntos de decisión
+    \column{0.50\textwidth}
+    \begin{itemize}
+        \item<1-> \textbf{Filtrado de Valores Atípicos}
+        \begin{itemize}
+            \item<1-> Filtrado de outliers en \texttt{duration\_ms}, \texttt{loudness}, \texttt{tempo} y \texttt{speechiness} para eliminar lo que no es una canción.
+            \item<1-> Se opta por mantener música comercial, para evitar confusiones con podcasts o música ambiental.
+        \end{itemize}
+        \vspace{1em}
+        \item<2-> \textbf{Partición y Escalado}
+        \begin{itemize}
+            \item <2-> División 80/20 (Train/Test).
+            \item <2-> \textit{StandardScaler} para normalizar magnitudes y evitar el \textit{Data Leakage}.
+        \end{itemize}
+    \end{itemize}
 \end{columns}
 \end{frame}
 %----- Sección de Modelado y Evaluación ---
