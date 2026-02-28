@@ -283,7 +283,7 @@
 \end{frame}
 %----- Sección de Preprocesamiento -----
 \section[Preprocesamiento de Datos]{Preprocesamiento de Datos}
-%----- Lámina 9: Hallazgos del Análisis Exploratorio ---
+%----- Lámina 9: Preprocesamiento ---
 \begin{frame}{Preprocesamiento: Valores Faltantes}
 \begin{columns}
     % Imagen de vacíos
@@ -297,12 +297,45 @@
     % Explicación
     \column{0.60\textwidth}
     \textbf{Tratamiento de Datos:}
+    \vspace{0.5cm}
     \begin{itemize}
         \item <1-> \textbf{Limpieza Inicial:} Identificación de valores nulos en cada campo del dataset.
-        \item <2-> \textbf{Estrategia:} Dado el bajo porcentaje de nulos y su poca relevancia para el análisis, se opta por mantener las filas con valores faltantes.
+        \vspace{0.2cm}
+        \item <2-> \textbf{Estrategia:} Dado el bajo porcentaje de nulos y su poca relevancia para el análisis, se opta por eliminar las filas con valores faltantes. Esto también permite la utilización de un modelo de regresión.
     \end{itemize}
 \end{columns}
 \end{frame}
+%----- Lámina 10: Preprocesamiento ---
+\begin{frame}{Preprocesamiento: Variables No Relevantes}
+    \begin{itemize}
+        \item <1-> \textbf{Limpieza de nulos:} Se ejecuta la eliminación de filas con valores faltantes.
+        \vspace{0.2cm}
+        \item <1-> \textbf{Limpieza de variables no relevantes:} Se descartan las columnas que no aportan información útil para el modelo predictivo, como los IDs, nombres y géneros de canciones.
+    \end{itemize}
+    \vspace{0.2cm}
+    \par \setlength{\parindent}{1em}\textbf{Dimensiones resultantes:} 113.999 registros y 14 columnas.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/clean.png} 
+        \vspace{-0.5em}
+        \caption{\footnotesize Limpieza Estructural del Dataset.}
+    \end{figure}
+\end{frame}
+%----- Lámina 11: Preprocesamiento ---
+\begin{frame}{Preprocesamiento: Valores Lógicos}
+    \begin{itemize}
+        \item <1-> \textbf{Valores Lógicos:} Los modelos de regresión necesitan variables numéricas. Por esta razón, se transforman los valores booleanos de la columna \texttt{explicit} a 0 (no explícito) y 1 (explícito).
+    \end{itemize}
+    \vspace{0.2cm}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/explicitBool.png} 
+        \vspace{-0.5em}
+        \caption{\footnotesize Transformación de Booleanos.}
+    \end{figure}
+\end{frame}
+%----- Sección de Análisis Exploratorio de Datos (EDA) ---
+\section[An\'alisis Exploratorio de Datos (EDA)]{An\'alisis Exploratorio de Datos (EDA)}
 %-----
 \begin{frame}{Tipos de conocimiento a extraer\cite{han2012mining}}
 \begin{columns}
@@ -622,8 +655,6 @@
 \end{columns}
 \end{frame}
 %----- 
-\section[An\'alisis Exploratorio de Datos (EDA)]{An\'alisis Exploratorio de Datos (EDA)}
-%-----
 \section[Modelado y Evaluaci\'on]{Modelado y Evaluaci\'on}
 %-----
 \section[Conclusiones]{Conclusiones}
