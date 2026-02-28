@@ -235,14 +235,14 @@
         Transformar los atributos acústicos de los tracks en un valor numérico de \texttt{popularity} mediante un modelo de \textbf{regresión}, permitiendo predecir el rendimiento comercial de una canción.
     \end{block}
     
-    \vspace{0.5cm}
+    \vspace{0.2cm}
     \textbf{Criterios de Éxito del Proyecto:}
     \begin{itemize}
         \item \textbf{Técnico:} Lograr un modelo con un margen de error aceptable que permita diferenciar canciones con alto potencial de aquellas con bajo impacto.
         \item \textbf{De Negocio:} Identificar los patrones históricos que correlacionan el "sonido" (variables flotantes) con el éxito, para reducir el riesgo en la toma de decisiones de inversión.
     \end{itemize}
     
-    \vspace{0.5cm}
+    \vspace{0.2cm}
     \textbf{Meta Final:}
     \par Generar una herramienta analítica que determine si una canción será un éxito basándose en su composición técnica.
 \end{frame}
@@ -271,6 +271,39 @@
         \caption{Tipos de datos por columna del dataset escogido.}
     \end{table}
 \end{frame}
+%----- Lámina 8: Comprensión de los Datos 2 ---
+\begin{frame}{Fase II: Comprensión de los Datos}
+    \textbf{Previsualización de los Datos:}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{figs/preview1.png}        
+        \includegraphics[width=0.7\textwidth]{figs/preview1.2.png}
+        \caption{\footnotesize Impresión de los primeros registros del dataset.}
+    \end{figure}
+\end{frame}
+%----- Sección de Preprocesamiento -----
+\section[Preprocesamiento de Datos]{Preprocesamiento de Datos}
+%----- Lámina 9: Hallazgos del Análisis Exploratorio ---
+\begin{frame}{Preprocesamiento: Valores Faltantes}
+\begin{columns}
+    % Imagen de vacíos
+    \column{0.35\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{figs/nulls.png} 
+        \vspace{-0.5em}
+        \caption{\footnotesize Cantidad y porcentaje de valores faltantes por columna.}
+    \end{figure}
+    % Explicación
+    \column{0.60\textwidth}
+    \textbf{Tratamiento de Datos:}
+    \begin{itemize}
+        \item <1-> \textbf{Limpieza Inicial:} Identificación de valores nulos en cada campo del dataset.
+        \item <2-> \textbf{Estrategia:} Dado el bajo porcentaje de nulos y su poca relevancia para el análisis, se opta por mantener las filas con valores faltantes.
+    \end{itemize}
+\end{columns}
+\end{frame}
+%-----
 \begin{frame}{Tipos de conocimiento a extraer\cite{han2012mining}}
 \begin{columns}
     \column{0.5\textwidth}
@@ -588,8 +621,6 @@
     \end{itemize}
 \end{columns}
 \end{frame}
-%----- 
-\section[Preprocesamiento de Datos]{Preprocesamiento de Datos}
 %----- 
 \section[An\'alisis Exploratorio de Datos (EDA)]{An\'alisis Exploratorio de Datos (EDA)}
 %-----
