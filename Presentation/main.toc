@@ -4,5 +4,5 @@
 \beamer@sectionintoc {3}{Comprensi\'on del Negocio y los Datos}{12}{0}{3}
 \beamer@sectionintoc {4}{Preprocesamiento de Datos}{16}{0}{4}
 \beamer@sectionintoc {5}{An\'alisis Exploratorio de Datos (EDA)}{21}{0}{5}
-\beamer@sectionintoc {6}{Modelado y Evaluaci\'on}{33}{0}{6}
-\beamer@sectionintoc {7}{Conclusiones}{34}{0}{7}
+\beamer@sectionintoc {6}{Modelado y Evaluaci\'on}{41}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{46}{0}{7}

@@ -16,43 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
-    \entry{han2012mining}{online}{}{}
-      \name{author}{3}{}{%
-        {{hash=7cacfe272c4d395c979d6aecd2f5ec9c}{%
-           family={Han},
-           familyi={H\bibinitperiod},
-           given={Jiawei},
-           giveni={J\bibinitperiod}}}%
-        {{hash=795a5b818011e939f0720e02f58fc3b7}{%
-           family={Kamber},
-           familyi={K\bibinitperiod},
-           given={Micheline},
-           giveni={M\bibinitperiod}}}%
-        {{hash=56af930e1f5e2c9a791b71e7b347c0ba}{%
-           family={Pei},
-           familyi={P\bibinitperiod},
-           given={Jian},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{0220571bc54b6a49e24235f35ac40f4d}
-      \strng{fullhash}{0220571bc54b6a49e24235f35ac40f4d}
-      \strng{fullhashraw}{0220571bc54b6a49e24235f35ac40f4d}
-      \strng{bibnamehash}{0220571bc54b6a49e24235f35ac40f4d}
-      \strng{authorbibnamehash}{0220571bc54b6a49e24235f35ac40f4d}
-      \strng{authornamehash}{0220571bc54b6a49e24235f35ac40f4d}
-      \strng{authorfullhash}{0220571bc54b6a49e24235f35ac40f4d}
-      \strng{authorfullhashraw}{0220571bc54b6a49e24235f35ac40f4d}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Data mining concepts and techniques, third edition}
-      \field{year}{2012}
-    \endentry
-  \enddatalist
-\endrefsection
 \endinput
 

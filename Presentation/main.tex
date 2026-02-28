@@ -336,326 +336,241 @@
 \end{frame}
 %----- Sección de Análisis Exploratorio de Datos (EDA) ---
 \section[An\'alisis Exploratorio de Datos (EDA)]{An\'alisis Exploratorio de Datos (EDA)}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer\cite{han2012mining}}
+%----- Lámina 12: Estadísitcas Parte 1 ---
+\begin{frame}{EDA: Estadísticas Descriptivas}
+\par Descriptores estadistícos de media, mediana, desviación estándar, mínimo y máximo para cada variable numérica del dataset.
 \begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<1> Tareas descriptivas
+    % Explicación
+    \column{0.30\textwidth}
+    \vspace{0.5cm}
     \begin{itemize}
-        \item<1> Caracterizaci\'on de datos
-        \item<0> Discriminaci\'on de datos
+        \item <1-> \textbf{Popularidad:} Media de $33.2$ con alta desviación estándar, indicando una gran dispersión en el éxito de los tracks.
     \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.45\textwidth}<1> 
-        \begin{figure}[c]
-    \centering
-    \includegraphics[width=.8\textwidth]{figs/descr-1.png}
-    \label{fig:descr-1}
-\end{figure}
- \centering
+    % Capture
+    \column{0.70\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/descriptiveStatistics.png} 
+        \vspace{-1.0em}
+        \caption{\footnotesize Estadísticas descriptivas.}
+    \end{figure}
 \end{columns}
 \end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
+%----- Lámina 13: Estadísitcas Parte 2 ---
+\begin{frame}{EDA: Estadísticas Descriptivas}
+\par Descriptores estadistícos de media, mediana, desviación estándar, mínimo y máximo para cada variable numérica del dataset.
 \begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<1> Tareas descriptivas\footnote{\color{gnuhealth!60}kaggle.com/search?q=eda}
+    % Explicación
+    \column{0.30\textwidth}
+    \vspace{0.5cm}
     \begin{itemize}
-        \item<0> Caracterizaci\'on de datos
-        \item<1> Discriminaci\'on de datos
+        \item <1-> \textbf{Duración:} El promedio se sitúa en $\approx 228$s (3.8 min). Se detectan valores máximos extremos que sugieren presencia de \textit{outliers}.
     \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.45\textwidth}<1> 
-        \begin{figure}[c]
-    \centering
-    \includegraphics[width=.8\textwidth]{figs/descr-2.png}
-    \label{fig:descr-2}
-\end{figure}
- \centering
+    % Capture
+    \column{0.70\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/descriptiveStatistics.png} 
+        \vspace{-1.0em}
+        \caption{\footnotesize Estadísticas descriptivas.}
+    \end{figure}
 \end{columns}
 \end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
+%----- Lámina 14: Estadísitcas Parte 3 ---
+\begin{frame}{EDA: Estadísticas Descriptivas}
+\par Descriptores estadistícos de media, mediana, desviación estándar, mínimo y máximo para cada variable numérica del dataset.
 \begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
+    % Explicación
+    \column{0.30\textwidth}
+    \vspace{0.5cm}
     \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
+        \item <1-> \textbf{Variabilidad:} La amplitud de rangos en \textit{energy} y \textit{danceability} asegura una base de aprendizaje diversa para el modelo de regresión.
     \end{itemize}
-    \item<1> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.45\textwidth}<1>
-        \begin{table}[c]
-     \centering
-     \begin{tabular}{c|c|c|c}
-         \textbf{ID} & ... & \textbf{${atributo}_i$} & \textsl{objetivo}\\
-         \hline
-          1 & ... & ${val}_{1,i}$ & ${obj}_{1}$\\
-          2 & ... & ${val}_{2,i}$ & ${obj}_{2}$\\
-     \end{tabular}
-     \caption{Estrutura ejemplo}
-     \label{tab:websites_visits}
- \end{table}
- \centering
- $type({obj}_i) = enum \rightarrow$ clasificaci\'on
- $type({obj}_i) = number \rightarrow$ regresi\'on
+    % Capture
+    \column{0.70\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/descriptiveStatistics.png} 
+        \vspace{-1.0em}
+        \caption{\footnotesize Estadísticas descriptivas.}
+    \end{figure}
 \end{columns}
 \end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
+%----- Lámina 15: Análisis de Distribución ---
+\begin{frame}{EDA: Análisis de Distribución}
+    \par Se tiene que $y \in \mathbb{R}^{n}$, con $y_i \in [0, 100]$ representa la popularidad real de una canción $i$. Su distribución permite observar su comportamiento para la toma de decisiones.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figs/popularity.png} 
+        \vspace{-0.9em}
+        \caption{\footnotesize Distribución de la popularidad.}
+    \end{figure}
+\end{frame}
+%----- Lámina 16: Análisis de Distribución - Observaciones ---
+\begin{frame}{EDA: Análisis de Distribución}
 \begin{columns}
+    % Capture
+    \column{0.50\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/popularity.png} 
+        \vspace{-0.9em}
+        \caption{\footnotesize Distribución de la popularidad.}
+    \end{figure}
+    % Explicación
+    \column{0.50\textwidth}
+    \begin{itemize}
+        \item <1-> \textbf{Distribución Asimétrica:} Se observa un sesgo a la derecha (\textit{Right-Skewed}), con una alta concentración en el rango $[0, 50]$.
+        \vspace{0.8em}
+        \item <2-> \textbf{Fenómeno Long-Tail:} La presencia de "éxitos" (popularidad $>80$) es estadísticamente baja, reflejando la realidad del mercado musical.
+        \vspace{0.8em}
+        \item <3-> \textbf{Punto Crítico (Popularidad 0):} Existe un pico en el valor mínimo, atribuible a lanzamientos recientes o nichos sin tracción comercial.
+    \end{itemize}
+\end{columns}
+\end{frame}
+%----- Lámina 17: Análisis de Correlación ---
+\begin{frame}{EDA: Análisis de Correlación}
+    \par Se implementa un Heatmap para visualizar la matriz de correlación entre las variables numéricas del dataset, con el objetivo de identificar relaciones lineales que puedan ser aprovechadas por el modelo de regresión.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.65\textwidth]{figs/heatmap.png} 
+        \vspace{-1.3em}
+        \caption{\footnotesize Matriz de correlación.}
+    \end{figure}
+\end{frame}
+%----- Lámina 18: Análisis de Correlación - Observaciones ---
+\begin{frame}{EDA: Análisis de Correlación}
+\begin{columns}
+    % Capture
+    \column{0.50\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/heatmap.png} 
+        \vspace{-0.9em}
+        \caption{\footnotesize Matriz de correlación.}
+    \end{figure}
+    % Explicación
+    \column{0.50\textwidth}
+    \begin{itemize}
+        \item <1-> \textbf{Multicolinealidad:} Se observa una fuerte correlación positiva entre \textit{energy} y \textit{loudness}.
+        \vspace{0.8em}
+        \item <2-> \textbf{Relación con el Target:} La popularidad no muestra una dependencia lineal fuerte con una única variable.
+        \vspace{0.8em}
+        \item <3-> \textbf{Correlación Negativa:} Atributos como \textit{acousticness} e \textit{instrumentalness} tienden a oponerse a la energía del track.
+    \end{itemize}
+\end{columns}
+\end{frame}
+%----- Lámina 19: Análisis de Correlación ---
+\begin{frame}{EDA: Análisis de Correlación}
+    \par Para el par de variables con mayor correlación positiva, se realiza un análisis de dispersión para evaluar la relación lineal entre ellas.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figs/scatterPlot.png} 
+        \vspace{-1.3em}
+        \caption{\footnotesize Análisis de dispersión entre \textit{energy} y \textit{loudness}.}
+    \end{figure}
+\end{frame}
+%----- Lámina 20: Análisis de Correlación - Scatter Plot ---
+\begin{frame}{EDA: Análisis de Correlación}
+\begin{columns}
+    % Capture
+    \column{0.50\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figs/scatterPlot.PNG} 
+        \vspace{-0.9em}
+        \caption{\footnotesize Análisis de dispersión entre \textit{energy} y \textit{loudness}.}
+    \end{figure}
+    % Explicación
+    \column{0.50\textwidth}
+    \begin{itemize}
+        \item <1-> \textbf{Multicolinealidad Detectada:} Alta correlación positiva entre \textit{energy} y \textit{loudness}. Se evaluará el uso de solo una para evitar redundancia en el modelo.
+        \vspace{0.2em}
+        \item <2-> \textbf{Complejidad del Target:} La popularidad no presenta una dependencia lineal fuerte con ninguna variable individual, sugiriendo un fenómeno multivariado.
+        \vspace{0.2em}
+        \item <3-> \textbf{Relaciones Inversas:} Se confirma una correlación negativa lógica entre \textit{acousticness} frente a \textit{energy} y \textit{loudness}.
+    \end{itemize}
+\end{columns}
+\end{frame}
+%----- Lámina 21: Outliers ---
+\begin{frame}{EDA: Análisis de Valores Atípicos (Outliers)}
+    \par Creo que se podría agregar un gráfico de boxplot para destacar los outliers y justificar luego la decisión del tratamiento que elimina los 0s.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\textwidth]{figs/data-1.png} 
+        \vspace{-1.3em}
+        \caption{\footnotesize Para el gráfico de caja y bigotes.}
+    \end{figure}
+\end{frame}
+%----- Lámina 22: Decisiones ---
+\begin{frame}{EDA: Decisiones de Tratamiento}
+\begin{columns}
+    % Columna Izquierda: Puntos de decisión
     \column{0.45\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
     \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
+        \item<1-> \textbf{Tratamiento del Sesgo (Target)}
+        \begin{itemize}
+            \item <1-> Eliminación selectiva de registros con popularidad 0 para evitar el sesgo predictivo.
+        \end{itemize}
+        
+        \vspace{0.5em}
+        \item<2-> \textbf{Selección de Características}
+        \begin{itemize}
+            \item <2-> Remoción de \texttt{loudness} por multicolinealidad con \texttt{energy}.
+            \item <2-> Exclusión de \texttt{key} debido a su nula correlación con el éxito.
+        \end{itemize}
+
+        \vspace{0.5em}
+        \item<3-> \textbf{Partición y Escalado}
+        \begin{itemize}
+            \item <3-> División 80/20 (Train/Test).
+            \item <3-> \textit{StandardScaler} para normalizar magnitudes y evitar el \textit{Data Leakage}.
+        \end{itemize}
     \end{itemize}
-    \item<1> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.5\textwidth}<1>
-    \textbf{Ejemplo de aplicaciones}
-    \begin{itemize}
-        \item Determinar la categoría de una p\'agina web
-        \item Identificar el sentimiento predominante de un tweet
-        \item Categorizar candidatos a cr\'editos bancarios
-        \item Estimar el costo de un inmueble
-        \item Estimar el crecimiento de una compa\~n\'ia
-        \item Estimar la popularidad de una canci\'on en spotify\footnote{\color{gnuhealth!60}\href{https://hf.co/datasets/maharshipandya/spotify-tracks-dataset}{hf.co/datasets/maharshipandya/spotify-tracks-dataset}}
-    \end{itemize}
-\end{columns}
-\end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
-    \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
-    \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<1> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.45\textwidth}<1> 
-        \begin{figure}[c]
+    % Columna Derecha: Imágenes dinámicas
+    \column{0.50\textwidth}
     \centering
-    \includegraphics[width=.8\textwidth]{figs/agrup-1.png}
-    \label{fig:agrup-1}
-\end{figure}
- \centering
+    % Imagen para el punto 1: Histograma original vs filtrado
+    \only<1>{
+        \begin{figure}
+            \includegraphics[width=\textwidth]{figs/data-1.png}
+            \caption{\footnotesize Reducción de ruido en el target.}
+        \end{figure}
+    }
+    % Imagen para el punto 2: Heatmap reducido o variables independientes
+    \only<2>{
+        \begin{figure}
+            \includegraphics[width=\textwidth]{figs/heatmap_cleaned.png}
+            \caption{\footnotesize Matriz de características optimizada.}
+        \end{figure}
+    }
+    % Imagen para el punto 3: Código de partición o esquema Train/Test
+    \only<3>{
+        \begin{figure}
+            \includegraphics[width=\textwidth]{figs/data-1.png}
+            \caption{\footnotesize Pipeline de preparación de datos.}
+        \end{figure}
+    }
 \end{columns}
 \end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
-    \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
-    \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<1> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.45\textwidth}<1> 
-        \begin{figure}[c]
-    \centering
-    \includegraphics[width=.8\textwidth]{figs/agrup-2.png}
-    \label{fig:agrup-2}
-\end{figure}
- \centering
-\end{columns}
-\end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
-    \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
-    \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<1> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-\column{0.5\textwidth}<1>
-    \textbf{Ejemplo de aplicaciones}
-    \begin{itemize}
-        \item Segmentaci\'on de clientes
-        \item Agrupaci\'on de tweets por semajanza sem\'antica\footnote{\color{gnuhealth!60}\href{https://sbert.net}{sbert.net}}
-        \item Agrupar estudiantes con desempe\~nos similares
-    \end{itemize}
-\end{columns}
-\end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
-    \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
-    \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<1> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.45\textwidth}<1> 
-        \begin{figure}[c]
-    \centering
-    \includegraphics[width=.8\textwidth]{figs/outl-1.png}
-    \label{fig:outl-1}
-\end{figure}
- \centering
-\end{columns}
-\end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
-    \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
-    \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<1> Detecci\'on de anomal\'ias
-    \item<0> Asociaciones
-\end{itemize}
-    \column{0.5\textwidth}<1>
-    \textbf{Ejemplo de aplicaciones}
-    \begin{itemize}
-        \item Detecci\'on de ataques a servidores
-        \item Detecci\'on de fraudes bancarios
-        \item Identificar las fallas de un servicio de telefonía móvil
-    \end{itemize}
-\end{columns}
-\end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
-    \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
-    \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<1> Asociaciones
-\end{itemize}
-    \column{0.45\textwidth}<1> 
-        \begin{figure}[c]
-    \centering
-    \includegraphics[width=\textwidth]{figs/asoc-1.png}
-    \label{fig:asoc-1}
-\end{figure}
- \centering
-\end{columns}
-\end{frame}
-%-----
-\begin{frame}{Tipos de conocimiento a extraer}
-\begin{columns}
-    \column{0.5\textwidth}
-\begin{itemize}
-    \item<0> Tareas descriptivas
-    \begin{itemize}
-        \item Caracterizaci\'on de datos
-        \item Discriminaci\'on de datos
-    \end{itemize}
-    \item<0> Tareas predictivas
-    \begin{itemize}
-        \item Clasificaci\'on
-        \item Regresi\'on
-    \end{itemize}
-    \item<0> Agrupaci\'on
-    \item<0> Detecci\'on de anomal\'ias
-    \item<1> Asociaciones
-\end{itemize}
-    \column{0.5\textwidth}<1>
-    \textbf{Ejemplo de aplicaciones}
-    \begin{itemize}
-        \item \textsl{"Tambi\'en te puede gustar"}
-        \item Detecci\'on de ocurrencias probables/improbables
-    \end{itemize}
-\end{columns}
-\end{frame}
-%----- 
+%----- Sección de Modelado y Evaluación ---
 \section[Modelado y Evaluaci\'on]{Modelado y Evaluaci\'on}
+%----- Lámina 23: Modelado ---
+\begin{frame}{Entrenamiento del Modelo}
+    \par Lalala
+\end{frame}
+%----- Lámina 24: Evaluación ---
+\begin{frame}{Evaluación del Modelo}
+    \par Lalala
+\end{frame}
+%----- Lámina 25: Despliegue ---
+\begin{frame}{Despliegue del Modelo}
+    \par Lalala
+\end{frame}
+%----- Lámina 26: Simulación ---
+\begin{frame}{Simulación del Modelo}
+    \par Lalala
+\end{frame}
 %-----
 \section[Conclusiones]{Conclusiones}
 %-----
