@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  28 FEB 2026 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  28 FEB 2026 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1645,6 +1645,10 @@ File: figs/outliers_duration.png Graphic file (type png)
 Package pdftex.def Info: figs/outliers_duration.png  used on input line 549.
 (pdftex.def)             Requested size: 137.67603pt x 178.17616pt.
 
+Overfull \vbox (0.1747pt too high) detected at line 549
+ []
+
+
 Overfull \hbox (93.25948pt too wide) has occurred while \output is active
   [] [][][][] [][][] [][][][] [][][][] [][][][][][][][][][][][][][] [][][][][] [][][][]  
  []
@@ -1658,6 +1662,10 @@ File: figs/outliers_loudness_tempo.png Graphic file (type png)
 Package pdftex.def Info: figs/outliers_loudness_tempo.png  used on input line 549.
 (pdftex.def)             Requested size: 137.67603pt x 85.00291pt.
 
+Overfull \vbox (0.1747pt too high) detected at line 549
+ []
+
+
 Overfull \hbox (93.25948pt too wide) has occurred while \output is active
   [] [][][][] [][][] [][][][] [][][][] [][][][][][][][][][][][][][] [][][][][] [][][][]  
  []
@@ -1670,6 +1678,10 @@ File: figs/outliers_speechiness.png Graphic file (type png)
 <use figs/outliers_speechiness.png>
 Package pdftex.def Info: figs/outliers_speechiness.png  used on input line 549.
 (pdftex.def)             Requested size: 137.67603pt x 174.93031pt.
+
+Overfull \vbox (0.1747pt too high) detected at line 549
+ []
+
 
 Overfull \hbox (93.25948pt too wide) has occurred while \output is active
   [] [][][][] [][][] [][][][] [][][][] [][][][][][][][][][][][][][] [][][][][] [][][][]  
@@ -1872,7 +1884,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,19n,123p,803b,2640s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (53 pages, 3151999 bytes).
+Output written on main.pdf (53 pages, 3152193 bytes).
 PDF statistics:
  3755 PDF objects out of 4296 (max. 8388607)
  114 named destinations out of 1000 (max. 500000)
