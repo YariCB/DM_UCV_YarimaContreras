@@ -4,5 +4,5 @@
 \beamer@sectionintoc {3}{Definición del Reto Comercial y Análisis del Inventario de Datos}{12}{0}{3}
 \beamer@sectionintoc {4}{Garantía de Calidad y Fiabilidad de la Información}{16}{0}{4}
 \beamer@sectionintoc {5}{Descubrimiento de los Atributos de Popularidad}{21}{0}{5}
-\beamer@sectionintoc {6}{Validación de la Capacidad de Predicción}{47}{0}{6}
-\beamer@sectionintoc {7}{Estrategia Basada en Evidencia para el Éxito de Contenidos}{53}{0}{7}
+\beamer@sectionintoc {6}{Validación de la Capacidad de Predicción}{48}{0}{6}
+\beamer@sectionintoc {7}{Estrategia Basada en Evidencia para el Éxito de Contenidos}{54}{0}{7}
