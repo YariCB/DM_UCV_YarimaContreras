@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1773021103.63225 -1
-  "main.bcf" 1773021102 108537 764345aadabc24040c9001d17f26ec00 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1773024670.9541 -1
+  "main.bcf" 1773024670 108537 764345aadabc24040c9001d17f26ec00 "pdflatex"
   "reference.bib" 1770796762 558 73de47805d85eed2026c1271e73d9dfe ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773021083.83504 "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" "main.pdf" "main" 1773021103.63363 0
+["pdflatex"] 1773024647.72734 "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" "main.pdf" "main" 1773024670.95541 0
   "C:/Users/yarim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1771024925 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/yarim/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1771024576 13333903 f005c1b45d3c0b01014c4d4dcbaa866a ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -40,7 +40,9 @@
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmtt9.tfm" 1136765053 764 c98a2af25c99b73a368cf7336e255190 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
+  "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1247596667 36094 798f80770b3b148ceedd006d487db67c ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247596666 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1247596666 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1247596666 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb" 1247596667 24416 36515493f76659302880e2604105b074 ""
@@ -51,6 +53,7 @@
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1247596667 25168 c89d909bac101e478326bb9e00519ca3 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi9.pfb" 1247596666 25029 6f2cec9646ca278302ed7d604e506e3e ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1247596666 32442 c975af247b6702f7ca0c299af3616b80 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1247596667 31099 342ef5a582aacbd3346f3cf4579679fa ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb" 1247596667 29078 718ea4567ceff944262b0f5b0800e1d9 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
@@ -245,7 +248,7 @@
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/x11nam.def" 1729265222 9125 edad0294b4f7dd6df8c57b02b40a0855 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" 1773021081 28706 90d70acd157f6cfd287edebd29cc1c20 ""
+  "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" 1773024645 31718 ec993201011e0d374238d7f51112b898 ""
   "figs/CRISP-DM.jpg" 1772162608 52829 1f4429a43f11c7883cad5b16f0f133f5 ""
   "figs/clean.png" 1772296094 19815 27e32cd41ae3329ae508da67789e0eb9 ""
   "figs/descriptiveStatistics.png" 1772298988 58128 20a2afca7e5e235077b41463818b39e9 ""
@@ -259,6 +262,7 @@
   "figs/outliers_loudness_tempo.png" 1772315150 24750 6bbeb0d298be5fcacdf90cd361d8dc89 ""
   "figs/outliers_speechiness.png" 1772314966 13769 7fb7d515d76f454c1795b56e4a1ba269 ""
   "figs/popularity.png" 1772301035 79928 90757e06738f3add34048820e4cd65a5 ""
+  "figs/popularity_vs_attributes.png" 1773021848 1272063 ace6d2cd92c4937fe7672b6c8b2234b8 ""
   "figs/popularity_withFewerZeros.png" 1772317387 45216 178bce6be036dc60bbac8aab04a1c6fc ""
   "figs/preview1.2.png" 1772238700 34136 c356e20677acaed96e190e33e8308bb1 ""
   "figs/preview1.png" 1772238733 60053 7d4e37087377fd5c9416ea0d7c65fd17 ""
@@ -267,13 +271,13 @@
   "figs/trainTestSplit.png" 1772317595 24126 33ede750896a61f9441b8617c44b7364 ""
   "logos/facultad.jpg" 1770796762 12944 b6e287e72866a405fd3e4fcf1ff4baa7 ""
   "logos/universidad.png" 1770796762 1035463 bf451a46dc21cd248ee074bde116f799 ""
-  "main.aux" 1773021102 7909 f3fcc1c4281f2b25395ca053aa93f56f "pdflatex"
+  "main.aux" 1773024670 8167 bfecb60977c80912ba4372edce6bb2f0 "pdflatex"
   "main.bbl" 1772310251 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.nav" 1773021102 5046 bd2db92d00cab1c2d6251e023391d7da "pdflatex"
-  "main.out" 1773021102 2073 0ed74616100a77ec9aceba49bbb42a65 "pdflatex"
-  "main.run.xml" 1773021102 2304 74a9fdaaeec024a363f63c1043e5396c "pdflatex"
-  "main.tex" 1773021081 28706 90d70acd157f6cfd287edebd29cc1c20 ""
-  "main.toc" 1773021102 622 7a32210b6e28ec723af150e6e8fda843 "pdflatex"
+  "main.nav" 1773024670 5232 6686496dd4dd55cd26bc72da84be29d0 "pdflatex"
+  "main.out" 1773024670 2073 0ed74616100a77ec9aceba49bbb42a65 "pdflatex"
+  "main.run.xml" 1773024670 2304 74a9fdaaeec024a363f63c1043e5396c "pdflatex"
+  "main.tex" 1773024645 31718 ec993201011e0d374238d7f51112b898 ""
+  "main.toc" 1773024670 622 eea37acc1cc4f6c6c5348b75ee719f81 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

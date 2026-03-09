@@ -492,6 +492,53 @@
     \end{itemize}
 \end{columns}
 \end{frame}
+%----- Lámina: Relación entre otros atributos y popularidad ---
+\begin{frame}{EDA: Relación entre Atributos Acústicos y Popularidad}
+    \par Con el objetivo de revelar dónde está el consenso del mercado y cuáles son los patrones técnicos de los éxitos comerciales en Spotify, se presentan los siguientes gráficos de dispersión:
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figs/popularity_vs_attributes.png} 
+        \vspace{-1.0em}
+        \caption{\footnotesize Relación entre Atributos Acústicos y Popularidad.}
+    \end{figure}
+\end{frame}
+%----- Lámina: Relación entre otros atributos y popularidad - Observaciones ---
+\begin{frame}{EDA: Relación entre Atributos Acústicos y Popularidad}
+    \small
+    % FILA 1: Intensidad y Estructura
+    \begin{columns}[t]
+        \column{0.48\textwidth}
+        \textbf{1. Intensidad (Loudness/Energy)}
+        \begin{itemize}
+            \item Tendencia de \texttt{energy} $> 0.5$.
+            \item Concentración de \texttt{loudness} entre -10 y 0 dB.
+            \item El oyente busca una \textbf{experiencia sonora vibrante}.
+        \end{itemize}
+        \column{0.48\textwidth}
+        \textbf{2. Estructura (Duration/Instrum.)}
+        \begin{itemize}
+            \item El éxito se desploma fuera de los \textbf{3 min} (200k ms).
+            \item Barrera clara para temas sin voz; la popularidad masiva requiere \texttt{instrumentalness} $\approx 0$.
+        \end{itemize}
+    \end{columns}
+    \vspace{1em}
+    \vspace{1em}
+    % FILA 2: Versatilidad y Autenticidad
+    \begin{columns}[t]
+        \column{0.48\textwidth}
+        \textbf{3. Versatilidad (Valence/Tempo)}
+        \begin{itemize}
+            \item Indiferencia ante el \texttt{tempo} o el sentimiento (triste/alegre).
+            \item Aunque hay sesgo hacia lo bailable (\texttt{danceability}), existen éxitos en todo el espectro.
+        \end{itemize}
+        \column{0.48\textwidth}
+        \textbf{4. Autenticidad (Speech./Acous.)}
+        \begin{itemize}
+            \item Rechazo a niveles altos de \texttt{speechiness} (podcasts).
+            \item Preferencia por grabaciones de \textbf{estudio} (\texttt{liveness} $< 0.4$) y sonidos menos orgánicos.
+        \end{itemize}
+    \end{columns}
+\end{frame}
 %----- Lámina 21: Outliers ---
 \begin{frame}{EDA: Análisis de Valores Atípicos (Outliers)}
     \par Se implementa un gráfico de caja y bigotes para identificar la presencia de valores atípicos en variables con escalas físicas, como \texttt{duration\_ms}, \texttt{tempo}, \texttt{loudness} y \texttt{speechiness} que podrían afectar el rendimiento del modelo de regresión.
