@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1772326823.68861 -1
-  "main.bcf" 1772326822 108537 764345aadabc24040c9001d17f26ec00 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1773021103.63225 -1
+  "main.bcf" 1773021102 108537 764345aadabc24040c9001d17f26ec00 "pdflatex"
   "reference.bib" 1770796762 558 73de47805d85eed2026c1271e73d9dfe ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1772326803.3299 "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" "main.pdf" "main" 1772326823.69006 0
+["pdflatex"] 1773021083.83504 "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" "main.pdf" "main" 1773021103.63363 0
   "C:/Users/yarim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1771024925 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/yarim/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1771024576 13333903 f005c1b45d3c0b01014c4d4dcbaa866a ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -245,7 +245,7 @@
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/x11nam.def" 1729265222 9125 edad0294b4f7dd6df8c57b02b40a0855 ""
   "C:/Users/yarim/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" 1772326800 27934 56edf9656233202302fa68ff3a3cb225 ""
+  "d:/Documentos/Estudios/UCV/11. Semestre 2-2025/Mineria de Datos/Repo DM/DM_UCV_YarimaContreras/Presentation/main.tex" 1773021081 28706 90d70acd157f6cfd287edebd29cc1c20 ""
   "figs/CRISP-DM.jpg" 1772162608 52829 1f4429a43f11c7883cad5b16f0f133f5 ""
   "figs/clean.png" 1772296094 19815 27e32cd41ae3329ae508da67789e0eb9 ""
   "figs/descriptiveStatistics.png" 1772298988 58128 20a2afca7e5e235077b41463818b39e9 ""
@@ -267,13 +267,13 @@
   "figs/trainTestSplit.png" 1772317595 24126 33ede750896a61f9441b8617c44b7364 ""
   "logos/facultad.jpg" 1770796762 12944 b6e287e72866a405fd3e4fcf1ff4baa7 ""
   "logos/universidad.png" 1770796762 1035463 bf451a46dc21cd248ee074bde116f799 ""
-  "main.aux" 1772326822 7197 d5204e1dc366106128c1f64c131c4e88 "pdflatex"
+  "main.aux" 1773021102 7909 f3fcc1c4281f2b25395ca053aa93f56f "pdflatex"
   "main.bbl" 1772310251 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.nav" 1772326822 4558 d56d7b1ecab67ed8571dc4676b4e240d "pdflatex"
-  "main.out" 1772326822 1235 bb7ee7ef823a3a072989405119026f74 "pdflatex"
-  "main.run.xml" 1772326822 2304 74a9fdaaeec024a363f63c1043e5396c "pdflatex"
-  "main.tex" 1772326800 27934 56edf9656233202302fa68ff3a3cb225 ""
-  "main.toc" 1772326822 470 fd6b6ea4343fd86426b31e43551e7dcc "pdflatex"
+  "main.nav" 1773021102 5046 bd2db92d00cab1c2d6251e023391d7da "pdflatex"
+  "main.out" 1773021102 2073 0ed74616100a77ec9aceba49bbb42a65 "pdflatex"
+  "main.run.xml" 1773021102 2304 74a9fdaaeec024a363f63c1043e5396c "pdflatex"
+  "main.tex" 1773021081 28706 90d70acd157f6cfd287edebd29cc1c20 ""
+  "main.toc" 1773021102 622 7a32210b6e28ec723af150e6e8fda843 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

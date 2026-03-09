@@ -4,7 +4,7 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Introducci\'on y Objetivos}{3}{Introducci\'on y Objetivos}{0}}
+\headcommand {\sectionentry {1}{Definición del Potencial de Mercado}{3}{Definición del Potencial de Mercado}{0}}
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
@@ -13,14 +13,14 @@
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\beamer@sectionpages {3}{6}}
 \headcommand {\beamer@subsectionpages {3}{6}}
-\headcommand {\sectionentry {2}{Metodolog\'ia CRISP-DM}{7}{Metodolog\'ia CRISP-DM}{0}}
+\headcommand {\sectionentry {2}{Estrategia: Metodolog\'ia CRISP-DM}{7}{Estrategia: Metodolog\'ia CRISP-DM}{0}}
 \headcommand {\slideentry {2}{0}{2}{8/10}{}{0}}
 \headcommand {\beamer@framepages {8}{10}}
 \headcommand {\slideentry {2}{0}{3}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
 \headcommand {\beamer@sectionpages {7}{11}}
 \headcommand {\beamer@subsectionpages {7}{11}}
-\headcommand {\sectionentry {3}{Comprensi\'on del Negocio y los Datos}{12}{Comprensi\'on del Negocio y los Datos}{0}}
+\headcommand {\sectionentry {3}{Definición del Reto Comercial y Análisis del Inventario de Datos}{12}{Definición del Reto Comercial y Análisis del Inventario de Datos}{0}}
 \headcommand {\slideentry {3}{0}{2}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\slideentry {3}{0}{3}{14/14}{}{0}}
@@ -29,7 +29,7 @@
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\beamer@sectionpages {12}{15}}
 \headcommand {\beamer@subsectionpages {12}{15}}
-\headcommand {\sectionentry {4}{Preprocesamiento de Datos}{16}{Preprocesamiento de Datos}{0}}
+\headcommand {\sectionentry {4}{Garantía de Calidad y Fiabilidad de la Información}{16}{Garantía de Calidad y Fiabilidad de la Información}{0}}
 \headcommand {\slideentry {4}{0}{2}{17/18}{}{0}}
 \headcommand {\beamer@framepages {17}{18}}
 \headcommand {\slideentry {4}{0}{3}{19/19}{}{0}}
@@ -38,7 +38,7 @@
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\beamer@sectionpages {16}{20}}
 \headcommand {\beamer@subsectionpages {16}{20}}
-\headcommand {\sectionentry {5}{An\'alisis Exploratorio de Datos (EDA)}{21}{An\'alisis Exploratorio de Datos (EDA)}{0}}
+\headcommand {\sectionentry {5}{Descubrimiento de los Atributos de Popularidad}{21}{Descubrimiento de los Atributos de Popularidad}{0}}
 \headcommand {\slideentry {5}{0}{2}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
 \headcommand {\slideentry {5}{0}{3}{23/23}{}{0}}
@@ -67,7 +67,7 @@
 \headcommand {\beamer@framepages {43}{44}}
 \headcommand {\beamer@sectionpages {21}{44}}
 \headcommand {\beamer@subsectionpages {21}{44}}
-\headcommand {\sectionentry {6}{Modelado y Evaluaci\'on}{45}{Modelado y Evaluaci\'on}{0}}
+\headcommand {\sectionentry {6}{Validación de la Capacidad de Predicción}{45}{Validación de la Capacidad de Predicción}{0}}
 \headcommand {\slideentry {6}{0}{2}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
 \headcommand {\slideentry {6}{0}{3}{47/47}{}{0}}
@@ -76,17 +76,21 @@
 \headcommand {\beamer@framepages {48}{48}}
 \headcommand {\slideentry {6}{0}{5}{49/49}{}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\beamer@sectionpages {45}{49}}
-\headcommand {\beamer@subsectionpages {45}{49}}
-\headcommand {\sectionentry {7}{Conclusiones}{50}{Conclusiones}{0}}
-\headcommand {\slideentry {7}{0}{2}{51/51}{}{0}}
-\headcommand {\beamer@framepages {51}{51}}
-\headcommand {\slideentry {7}{0}{3}{52/52}{}{0}}
+\headcommand {\slideentry {6}{0}{6}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\beamer@sectionpages {45}{50}}
+\headcommand {\beamer@subsectionpages {45}{50}}
+\headcommand {\sectionentry {7}{Estrategia Basada en Evidencia para el Éxito de Contenidos}{51}{Estrategia Basada en Evidencia para el Éxito de Contenidos}{0}}
+\headcommand {\slideentry {7}{0}{2}{52/52}{}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {7}{0}{4}{53/53}{}{0}}
+\headcommand {\slideentry {7}{0}{3}{53/53}{}{0}}
 \headcommand {\beamer@framepages {53}{53}}
-\headcommand {\beamer@partpages {1}{53}}
-\headcommand {\beamer@subsectionpages {50}{53}}
-\headcommand {\beamer@sectionpages {50}{53}}
-\headcommand {\beamer@documentpages {53}}
-\headcommand {\gdef \inserttotalframenumber {40}}
+\headcommand {\slideentry {7}{0}{4}{54/54}{}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\slideentry {7}{0}{5}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\beamer@partpages {1}{55}}
+\headcommand {\beamer@subsectionpages {51}{55}}
+\headcommand {\beamer@sectionpages {51}{55}}
+\headcommand {\beamer@documentpages {55}}
+\headcommand {\gdef \inserttotalframenumber {42}}

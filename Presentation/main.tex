@@ -131,13 +131,13 @@
 \begin{frame}
 \frametitle{Contenido}
 \begin{columns}[c]
-\column{.5\textwidth}
+\column{.65\textwidth}
 \setlength{\parskip}{2ex}
  \tableofcontents
-\column{.45\textwidth}
+\column{.25\textwidth}
 
 \color{black!40}\emph{
-"Notoriamente no hay clasificación del universo que no sea arbitraria y conjetural."\footnote{El idioma analítico de John Wilkins - Jorge Luis Borges}
+"La música es la aritmética de los sonidos, como la óptica es la geometría de la luz."\footnote{Claude Debussy}
 }\\~
 \color{black}
 
@@ -147,7 +147,7 @@
 
 % Start body of the presentation
 %----- Sección de Introducción y Objetivos ---
-\section{Introducci\'on y Objetivos}
+\section{Definición del Potencial de Mercado}
 % --- Lámina 1: Contexto del Negocio ---
 \begin{frame}{Introducción: Contexto del Negocio}
     \begin{itemize}
@@ -191,7 +191,7 @@
     \end{itemize}
 \end{frame}
 %----- Sección de Metodología ---
-\section{Metodolog\'ia CRISP-DM}
+\section{Estrategia: Metodolog\'ia CRISP-DM}
 %----- Lámina 4: Características de CRISP-DM ---
 \begin{frame}{Metodología CRISP-DM: Características}
     \begin{columns}[c]
@@ -228,10 +228,10 @@
     \end{enumerate}
 \end{frame}
 %----- Sección de Comprensión del Negocio y los Datos ---
-\section[Comprensi\'on del Negocio y los Datos]{Comprensi\'on del Negocio y los Datos}
+\section[Definición del Reto Comercial y Análisis del Inventario de Datos]{Definición del Reto Comercial y Análisis del Inventario de Datos}
 %----- Lámina 6: Comprensión del Negocio ---
 \begin{frame}{Fase I: Comprensión del Negocio}
-    \begin{block}{Objetivo de Minería de Datos}
+    \begin{block}{Propuesta de Valor Analítica}
         Transformar los atributos acústicos de los tracks en un valor numérico de \texttt{popularity} mediante un modelo de \textbf{regresión}, permitiendo predecir el rendimiento comercial de una canción.
     \end{block}
     
@@ -248,14 +248,14 @@
 \end{frame}
 %----- Lámina 7: Comprensión de los Datos ---
 \begin{frame}{Fase II: Comprensión de los Datos}
-    \textbf{Origen del Dataset:} Spotify Tracks Dataset \href{https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset}{\textcolor{blue}{(Kaggle)}}.
+    \textbf{Origen de los datos:} Spotify Tracks Dataset \href{https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset}{\textcolor{blue}{(Kaggle)}}.
     \begin{itemize}
         \item \textbf{Observaciones:} 114.000 registros.
         \item \textbf{Variables:} 21 columnas.
     \end{itemize}
 
     \vspace{1.5em}
-    \textbf{Esquema del dataset:}
+    \textbf{Dimensiones del Análisis:}
     \vspace{-1em}
     \begin{table}[]
         \centering
@@ -282,7 +282,7 @@
     \end{figure}
 \end{frame}
 %----- Sección de Preprocesamiento -----
-\section[Preprocesamiento de Datos]{Preprocesamiento de Datos}
+\section[Garantía de Calidad y Fiabilidad de la Información]{Garantía de Calidad y Fiabilidad de la Información}
 %----- Lámina 9: Preprocesamiento ---
 \begin{frame}{Preprocesamiento: Valores Faltantes}
 \begin{columns}
@@ -335,7 +335,7 @@
     \end{figure}
 \end{frame}
 %----- Sección de Análisis Exploratorio de Datos (EDA) ---
-\section[An\'alisis Exploratorio de Datos (EDA)]{An\'alisis Exploratorio de Datos (EDA)}
+\section[Descubrimiento de los Atributos de Popularidad]{Descubrimiento de los Atributos de Popularidad}
 %----- Lámina 12: Estadísitcas Parte 1 ---
 \begin{frame}{EDA: Estadísticas Descriptivas}
 \par Descriptores estadistícos de media, mediana, desviación estándar, mínimo y máximo para cada variable numérica del dataset.
@@ -420,7 +420,7 @@
     % Explicación
     \column{0.50\textwidth}
     \begin{itemize}
-        \item <1-> \textbf{Distribución Asimétrica:} Se observa un sesgo a la derecha (\textit{Right-Skewed}), con una alta concentración en el rango $[0, 50]$.
+        \item <1-> \textbf{Distribución Asimétrica:} Se observa un sesgo positivo (\textit{Right-Skewed}), con una alta concentración en el rango $[0, 50]$.
         \vspace{0.8em}
         \item <2-> \textbf{Fenómeno Long-Tail:} La presencia de "éxitos" (popularidad $>80$) es estadísticamente baja, reflejando la realidad del mercado musical.
         \vspace{0.8em}
@@ -621,26 +621,33 @@
 \end{columns}
 \end{frame}
 %----- Sección de Modelado y Evaluación ---
-\section[Modelado y Evaluaci\'on]{Modelado y Evaluaci\'on}
-%----- Lámina 23: Modelado ---
+\section[Validación de la Capacidad de Predicción]{Validación de la Capacidad de Predicción}
+%----- Lámina 23: Paradigma y Justificación ---
+\begin{frame}{Paradigma y Justificación del Modelo}
+    \par Lalala
+\end{frame}
+%----- Lámina 24: Modelado ---
 \begin{frame}{Entrenamiento del Modelo}
     \par Lalala
 \end{frame}
-%----- Lámina 24: Evaluación ---
+%----- Lámina 25: Evaluación ---
 \begin{frame}{Evaluación del Modelo}
     \par Lalala
 \end{frame}
-%----- Lámina 25: Despliegue ---
+%----- Lámina 26: Despliegue ---
 \begin{frame}{Despliegue del Modelo}
     \par Lalala
 \end{frame}
-%----- Lámina 26: Simulación ---
+%----- Lámina 27: Simulación ---
 \begin{frame}{Simulación del Modelo}
     \par Lalala
 \end{frame}
 %-----
-\section[Conclusiones]{Conclusiones}
-%-----
+\section[Estrategia Basada en Evidencia para el Éxito de Contenidos]{Estrategia Basada en Evidencia para el Éxito de Contenidos}
+%----- Lámina 28: Conclusiones ---
+\begin{frame}{Conclusiones}
+    \par Aquí el profe propuso que podemos plantear usos del modelo y terminar con una frase que se alinee con los objetivos de Spotify, por ejemplo que los usuarios usen más la app gracias a la recomendación de canciones poco populares que cumplan con ciertas características acústicas que parecen gustarles a ellos.
+\end{frame}
 \begin{frame}{Resumen}
 \begin{columns}
     \column{.25\textwidth}

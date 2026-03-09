@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}\relax 
-\beamer@sectionintoc {1}{Introducci\'on y Objetivos}{3}{0}{1}
-\beamer@sectionintoc {2}{Metodolog\'ia CRISP-DM}{7}{0}{2}
-\beamer@sectionintoc {3}{Comprensi\'on del Negocio y los Datos}{12}{0}{3}
-\beamer@sectionintoc {4}{Preprocesamiento de Datos}{16}{0}{4}
-\beamer@sectionintoc {5}{An\'alisis Exploratorio de Datos (EDA)}{21}{0}{5}
-\beamer@sectionintoc {6}{Modelado y Evaluaci\'on}{45}{0}{6}
-\beamer@sectionintoc {7}{Conclusiones}{50}{0}{7}
+\beamer@sectionintoc {1}{Definición del Potencial de Mercado}{3}{0}{1}
+\beamer@sectionintoc {2}{Estrategia: Metodolog\'ia CRISP-DM}{7}{0}{2}
+\beamer@sectionintoc {3}{Definición del Reto Comercial y Análisis del Inventario de Datos}{12}{0}{3}
+\beamer@sectionintoc {4}{Garantía de Calidad y Fiabilidad de la Información}{16}{0}{4}
+\beamer@sectionintoc {5}{Descubrimiento de los Atributos de Popularidad}{21}{0}{5}
+\beamer@sectionintoc {6}{Validación de la Capacidad de Predicción}{45}{0}{6}
+\beamer@sectionintoc {7}{Estrategia Basada en Evidencia para el Éxito de Contenidos}{51}{0}{7}
