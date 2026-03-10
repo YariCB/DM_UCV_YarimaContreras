@@ -667,9 +667,72 @@
     \end{itemize}
 \end{columns}
 \end{frame}
-%----- Lámina: Experimento de Embedding ---
+%----- Lámina: Experimento de Embedding - Justificación ---
 \begin{frame}{Distancia Semántica: Categorías}
-\par Aquí va la parte del embedding
+    \textbf{¿Por qué estudiar variables textuales?}
+    \begin{itemize}
+        \item Los atributos acústicos (energy, tempo, loudness, ...) ignoran la \textbf{carga emocional} y temática del título (\textit{track\_name}) de la canción.
+        \item Los nombres de las canciones contienen metadatos implícitos sobre el mercado y el sentimiento del oyente.
+    \end{itemize}
+    
+    \vspace{0.8em}
+    \textbf{Metodología: Embeddings y Distancia de Coseno}
+    \begin{itemize}
+        \item Transformar el texto en vectores de alta dimensión mediante modelos de lenguaje Transformer.
+        \item Calcular la distancia semántica entre el nombre de cada track y categorías estratégicas: \textit{Amor, Fiesta y Tristeza}.
+        \item \textbf{Objetivo:} Cuantificar qué tanto se acerca una canción a un concepto temático para usarlo como predictor numérico.
+    \end{itemize}
+\end{frame}
+%----- Lámina: Experimento de Embedding - Proceso ---
+\begin{frame}{Implementación de Embedding}
+    \textbf{Flujo de Trabajo:}
+    \begin{enumerate}
+        \item \textbf{Vectorización:} Uso de \texttt{Sentence-Transformers} multilingües.
+        \item \textbf{Ingeniería de Características:} Inyección de 3 nuevas columnas al dataset original.
+        \item \textbf{Escalamiento:} Re-ajuste de la matriz mediante \texttt{StandardScaler} para integrar las distancias.
+    \end{enumerate}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.55\textwidth]{figs/embedding1.PNG} 
+        \vspace{-0.8em}
+        \caption{\footnotesize Previsualización de resultados con muestra aleatoria.}
+    \end{figure}
+\end{frame}
+%----- Lámina: Experimento de Embedding - Resultados ---
+\begin{frame}{Top 5 Canciones por Categoría}
+    \begin{columns}[t]
+        \column{0.35\textwidth}
+        \begin{enumerate}
+            \item Modelo \texttt{paraphrase-multilingual- MiniLM-L12-v2}.
+            \item Identificación de términos en español, inglés y portugués.
+            \item Detección de sinónimos semánticos.
+        \end{enumerate}
+        \column{0.65\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth]{figs/embedding_distances.PNG} 
+            \vspace{-0.8em}
+            \caption{\footnotesize Top 5 por Categoría.}
+        \end{figure}
+    \end{columns}
+\end{frame}
+%----- Lámina: Experimento de Embedding - Correlación ---
+\begin{frame}{Correlación: Dimensiones Semánticas y Popularidad}
+    \begin{columns}[t]
+        \column{0.35\textwidth}
+        \begin{enumerate}
+            \item Relación lineal muy baja: el nombre de la canción por sí solo no predice el éxito comercial.
+            \item Correlación de 0.44 entre \texttt{sadness\_distance} y \texttt{love\_distance}.
+            \item Mezcla de sentimientos de tristeza y amor (desamor).
+        \end{enumerate}
+        \column{0.65\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{figs/embedding_corr.PNG} 
+            \vspace{-0.8em}
+            \caption{\footnotesize Correlación Dimensiones Semánticas.}
+        \end{figure}
+    \end{columns}
 \end{frame}
 %----- Sección de Modelado y Evaluación ---
 \section[Validación de la Capacidad de Predicción]{Validación de la Capacidad de Predicción}
