@@ -673,26 +673,60 @@
 \end{frame}
 %----- Sección de Modelado y Evaluación ---
 \section[Validación de la Capacidad de Predicción]{Validación de la Capacidad de Predicción}
+
 %----- Lámina 23: Paradigma y Justificación ---
 \begin{frame}{Paradigma y Justificación del Modelo}
-    \par Lalala
+    \indent El desafío de predecir la popularidad de una canción usando de base sus atributos técnicos se aborda mediante un modelo de \textbf{regresión lineal}. 
+    
+    \begin{block}{Regresión Lineal}
+        El uso de \textbf{Minería de Datos} permite transformar características musicales en ventajas competitivas para sellos y artistas.
+    \end{block}
+
 \end{frame}
 %----- Lámina 24: Modelado ---
+
 \begin{frame}{Entrenamiento del Modelo}
-    \par Lalala
+
+    \begin{columns}
+
+        \column{0.40\textwidth}
+        \begin{itemize}
+            \item <1-> El entrenamiento del modelo de regresión fue realizado como un modelo de regresión clásico, es decir, que no posee regularización.
+            \vspace{0.8em}
+            \item <1-> Se generaron las respectivas predicciones con los datos.
+            \vspace{0.8em}
+            \item <1-> Se evaluó el rendimiento del modelo utilizando 2 métricas: el error cuadrático medio de la raíz y la varianza explicada.
+        \end{itemize}
+
+        \column{0.50\textwidth}
+        \only<1>{
+            \begin{figure}
+                \includegraphics[width=1.1\textwidth]{figs/modelTraining.png}
+                \caption{\footnotesize Algoritmo de entrenamiento.}
+            \end{figure}
+        }
+
+    \end{columns}
 \end{frame}
+
 %----- Lámina 25: Evaluación ---
 \begin{frame}{Evaluación del Modelo}
-    \par Lalala
+    \indent En el proceso de evaluación, primeramente, se seleccionaron las variables y coeficientes más relevantes 
+    para la predicción de la popularidad. 
 \end{frame}
+
+
 %----- Lámina 26: Despliegue ---
 \begin{frame}{Despliegue del Modelo}
     \par Lalala
 \end{frame}
+
 %----- Lámina 27: Simulación ---
 \begin{frame}{Simulación del Modelo}
     \par Lalala
 \end{frame}
+
+
 %-----
 \section[Estrategia Basada en Evidencia para el Éxito de Contenidos]{Estrategia Basada en Evidencia para el Éxito de Contenidos}
 %----- Lámina 28: Conclusiones ---
