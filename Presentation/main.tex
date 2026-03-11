@@ -695,6 +695,20 @@
 \end{frame}
 %----- Lámina 24: Modelado ---
 
+\begin{frame}{Paradigma y Justificación del Modelo}
+    La elección de un modelo de regresión lineal se basa en las siguientes consideraciones: \vspace{0.8em}
+    \begin{itemize}
+        \item <1-> Contexto del Análisis: El tipo de variable objetivo (popularidad) es numérica, lo que hace que el problema sea naturalmente de regresión, siendo la
+                   regresión lineal uno de los modelos más básicos para este tipo de tareas.
+        \vspace{0.8em}
+        \item <2-> Facilidad de Observación: Se puede observar el aumento de la popularidad a medida que incrementan atributos clave como la bailabilidad.
+        \vspace{0.8em}
+        \item <3-> Detección de Linealidad: El modelo fue útil para identificar relaciones lineales y no lineales entre los atributos técnicos y la popularidad.
+        \vspace{0.8em}
+        
+    \end{itemize}
+\end{frame}
+
 \begin{frame}{Entrenamiento del Modelo}
 
     \begin{columns}
@@ -705,7 +719,7 @@
             \vspace{0.8em}
             \item <1-> Se generaron las respectivas predicciones con los datos.
             \vspace{0.8em}
-            \item <1-> Se evaluó el rendimiento del modelo utilizando 2 métricas: el error cuadrático medio de la raíz y la varianza explicada.
+            \item <1-> Se evaluó el rendimiento del modelo utilizando 2 métricas: el error cuadrático medio de la raíz el coeficiente de determinación.
         \end{itemize}
 
         \column{0.55\textwidth}
@@ -839,7 +853,12 @@
 \end{frame}
 
 \begin{frame}{Referencias}
-\noindent\printbibliography
+\noindent\printbibliography Huerta, I. (s.f.). \textit{Domina los Embeddings : La clave para el análisis semántico de contenidos, textos, documentaciones y keywords}.
+https://ikaue.com/blog-data/embeddings-de-texto-la-clave-para-el-analisis-semantico-y-de-significados-seo
+
+\vspace{1em}
+
+\noindent\printbibliography Word Embeddings in NLP. (2025, 23 de Julio). GeekforGeeks. https://www.geeksforgeeks.org/nlp/word-embeddings-in-nlp/
 \end{frame}
 
 \begin{frame}
