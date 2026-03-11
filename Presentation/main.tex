@@ -90,7 +90,7 @@
 
 % Start presentation metadata
 \author[DM-6213]{Rafael Contreras Agudelo \\ Edwyn Guzmán \\ Yarima Contreras Blanco}
-\title{Presentaci\'on de Miner\'ia de datos \\ Spotify Tracks Dataset}
+\title{Presentaci\'on de Miner\'ia de Datos \\ Spotify Tracks Dataset}
 \institute[\textsl{Presentaci\'on de Miner\'ia de Datos}]{
     6213 - Miner\'ia de datos \\ \color{black!40} Facultad de ciencias \\ Universidad Central de Venezuela
     \medskip
@@ -679,8 +679,18 @@
     \indent El desafío de predecir la popularidad de una canción usando de base sus atributos técnicos se aborda mediante un modelo de \textbf{regresión lineal}. 
     
     \begin{block}{Regresión Lineal}
-        El uso de \textbf{Minería de Datos} permite transformar características musicales en ventajas competitivas para sellos y artistas.
+        Es un modelo matemático que busca representar una relación lineal entre una variable dependiente \textbf{Y} y una o más variables 
+        independientes \textbf{X}. Matemáticamente, se expresa como: $Y = X\beta + \epsilon$
     \end{block}
+    \vspace{0.5em}
+    Para este caso, se tiene que:
+    \begin {itemize}
+        \item <1-> \textbf{Y:} Popularidad de la canción (variable dependiente).
+        \item <2-> \textbf{X:} Atributos técnicos de la canción (variables independientes).
+        \item <3-> \textbf{$\beta$:} Coeficientes que representan el impacto de cada atributo en la popularidad.
+        \item <4-> \textbf{$\epsilon$:} Variable que indica el margen de error que se tiene.
+    \end{itemize}
+
 
 \end{frame}
 %----- Lámina 24: Modelado ---
@@ -711,36 +721,131 @@
 
 %----- Lámina 25: Evaluación ---
 \begin{frame}{Evaluación del Modelo}
-    \indent En el proceso de evaluación, primeramente, se seleccionaron las variables y coeficientes más relevantes 
-    para la predicción de la popularidad. 
+    \begin{itemize}
+        \item <1-> En el proceso de evaluación, primeramente, se seleccionaron las variables y coeficientes más relevantes 
+        para la predicción de la popularidad. 
+
+        \begin{figure}
+            \includegraphics[width=0.9\textwidth]{figs/variables_coeficientes.png}
+            \caption{\footnotesize Variables y coeficientes más relevantes.}
+        \end{figure}
+
+        \item <2-> Posteriormente, para poder realizar la evaluación, se utilizó un gráfico de barras en el cual se tiene en el eje X un valor
+        representa el impacto en la popularidad de la canción y en el eje Y se tienen las características tomadas para la evaluación.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Evaluación del Modelo}
+
+     \begin{figure}
+        \includegraphics[width=0.45\textwidth]{figs/evaluationDiagram.png}
+        \caption{\footnotesize Diagrama de evaluación del modelo.}
+    \end{figure}
+
+    \footnotesize{Los valores negativos del eje X representan un impacto negativo en la popularidad, mientras que los valores positivos 
+    representan un impacto positivo. En este caso, se puede observar que la característica con mayor impacto positivo es la "danceability", 
+    mientras que la característica con mayor impacto negativo es "instrumentalness". Esto sugiere que las canciones con mayor "danceability" 
+    tienden a ser más populares, mientras que las canciones con mayor "instrumentalness" tienden a ser menos populares.}
 \end{frame}
 
 
-%----- Lámina 26: Despliegue ---
-\begin{frame}{Despliegue del Modelo}
-    \par Lalala
-\end{frame}
-
-%----- Lámina 27: Simulación ---
+%----- Lámina 26: Simulación ---
 \begin{frame}{Simulación del Modelo}
-    \par Lalala
+    \begin{itemize}
+        \item <1-> Para este proceso se simuló la toma de 5 canciones del dataset original para así realizar la predicción de su popularidad
+        utilizando el modelo.
+
+        \begin{figure}
+            \includegraphics[width=0.9\textwidth]{figs/simulationCode1.png}
+            \caption{\footnotesize Código de simulación del modelo.}
+        \end{figure}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Simulación del Modelo}
+    \begin{itemize}
+        \item <1-> Luego, al momento de mostrar los resultados, se toma en cuenta la popularidad real de cada canción, para así poder realizar la comparación
+        con la popularidad predicha por el modelo.
+
+        \begin{figure}
+            \includegraphics[width=0.95\textwidth]{figs/simulationCode2.png}
+            \caption{\footnotesize Código de simulación del modelo.}
+        \end{figure}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Simulación del Modelo}
+    \begin{itemize}
+        \item <1-> Los resultados obtenidos de la simulación son los siguientes:
+
+        \begin{figure}
+            \includegraphics[width=0.9\textwidth]{figs/simulationResults.png}
+            \caption{\footnotesize Resultados de la simulación del modelo.}
+        \end{figure}
+    \end{itemize}
 \end{frame}
 
 
-%-----
+\begin{frame}{Comparación del Modelo}
+    \begin{itemize}
+        \item <1-> Por último, se realizó una segunda versión del modelo agregando dimensiones adicionales para determinar si existe
+        alguna mejora del mismo. Los resultados se muestran en la siguiente tabla: \vspace{0.4cm}
+
+        \begin{figure}
+            \includegraphics[width=0.9\textwidth]{figs/modelComparision.png}
+            \caption{\footnotesize Comparación de modelos.}
+        \end{figure}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Comparación del Modelo}
+    \begin{itemize}
+        \item <1-> De esta comparación se determinó que la nueva versión del modelo es un poco peor que la versión original.
+        Este empeoramiento puede deberse a: \vspace{0.2cm}
+        \begin{itemize}
+            \item <1-> Baja Correlación Lineal: El modelo busca relaciones directas: "Mientras más triste, más popular". Pero la música
+            no funciona de esa manera. De modo que, las variables nuevas pueden haber aportado más ruido que alguna mejora directa en la
+            predicción. \vspace{0.2cm}
+            \item <2-> Ruido en los títulos de las canciones: El título de la canción no representa necesariamente su contenido o estilo.\vspace{0.2cm}
+            \item <3-> Popularidad Multicausal: La popularidad depende de factores que el conjunto de datos no tiene, como el marketing,
+            fama del artista, tendencias musicales, entre otros.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
 \section[Estrategia Basada en Evidencia para el Éxito de Contenidos]{Estrategia Basada en Evidencia para el Éxito de Contenidos}
-%----- Lámina 28: Conclusiones ---
+%----- Lámina 27: Conclusiones ---
 \begin{frame}{Conclusiones}
-    \par Aquí el profe propuso que podemos plantear usos del modelo y terminar con una frase que se alinee con los objetivos de Spotify, por ejemplo que los usuarios usen más la app gracias a la recomendación de canciones poco populares que cumplan con ciertas características acústicas que parecen gustarles a ellos.
+    En base al estudio realizado, se tiene entonces que, aunque el modelo de regresión lineal proporciona una aproximación inicial para 
+    entender la relación entre los atributos técnicos de las canciones y su popularidad. \vspace{0.5em}
+
+    Sin embargo, esta aproximación inicial es valiosa para identificar tendencias generales y patrones en los datos. Entre estos patrones, 
+    se destacan los siguientes: \vspace{0.5em}
+
+    \begin{itemize}
+        \item <1-> El oyente busca una experiencia sonora vibrante.
+        \vspace{0.5em}
+        \item <2-> La gran popularidad se concentra en canciones que no sean instrumentales.
+        \vspace{0.5em}
+        \item <3-> Existe un preferencia por grabaciones de estudio y sonidos menos orgánicos.
+        \vspace{0.5em}
+    \end{itemize}
+
+    Este modelo puede ser una herramienta útil para Spotify al momento de tomar decisiones estratégicas sobre qué canciones promover o recomendar 
+    a los usuarios.
 \end{frame}
+
+
 \begin{frame}{Resumen}
-\begin{columns}
+    \begin{columns}
+        \column{.25\textwidth}
+        \column{.5\textwidth}
+        \begin{block}{Miner\'ia de datos}
+        Descubrir conocimiento y/o patrones a partir de datos.*
+    \end{block}
     \column{.25\textwidth}
-    \column{.5\textwidth}
-    \begin{block}{Miner\'ia de datos}
-    Descubrir conocimiento y/o patrones a partir de datos.*
-\end{block}
-\column{.25\textwidth}
 \end{columns}
     
 \end{frame}
@@ -751,7 +856,7 @@
 
 \begin{frame}
  \begin{center}
-		{\Huge ¡Gracias!}\\
+		{\Huge ¡MuchasGracias!}\\
 		\bigskip\bigskip % Vertical whitespace
 		
 		{\LARGE dm-25.ucv.ai}
