@@ -699,7 +699,7 @@
 
     \begin{columns}
 
-        \column{0.40\textwidth}
+        \column{0.35\textwidth}
         \begin{itemize}
             \item <1-> El entrenamiento del modelo de regresión fue realizado como un modelo de regresión clásico, es decir, que no posee regularización.
             \vspace{0.8em}
@@ -708,7 +708,7 @@
             \item <1-> Se evaluó el rendimiento del modelo utilizando 2 métricas: el error cuadrático medio de la raíz y la varianza explicada.
         \end{itemize}
 
-        \column{0.50\textwidth}
+        \column{0.55\textwidth}
         \only<1>{
             \begin{figure}
                 \includegraphics[width=1.1\textwidth]{figs/modelTraining.png}
@@ -726,7 +726,7 @@
         para la predicción de la popularidad. 
 
         \begin{figure}
-            \includegraphics[width=0.9\textwidth]{figs/variables_coeficientes.png}
+            \includegraphics[width=0.7\textwidth]{figs/variables_coeficientes.png}
             \caption{\footnotesize Variables y coeficientes más relevantes.}
         \end{figure}
 
@@ -789,8 +789,8 @@
 
 \begin{frame}{Comparación del Modelo}
     \begin{itemize}
-        \item <1-> Por último, se realizó una segunda versión del modelo agregando dimensiones adicionales para determinar si existe
-        alguna mejora del mismo. Los resultados se muestran en la siguiente tabla: \vspace{0.4cm}
+        \item <1-> Por último, se realizó una segunda versión del modelo agregando las dimensiones semánticas (categorías) obtenidas anteriormente 
+        para determinar si existe alguna mejora del mismo. Los resultados se muestran en la siguiente tabla: \vspace{0.4cm}
 
         \begin{figure}
             \includegraphics[width=0.9\textwidth]{figs/modelComparision.png}
@@ -801,8 +801,8 @@
 
 \begin{frame}{Comparación del Modelo}
     \begin{itemize}
-        \item <1-> De esta comparación se determinó que la nueva versión del modelo es un poco peor que la versión original.
-        Este empeoramiento puede deberse a: \vspace{0.2cm}
+        \item <1-> De esta comparación se determinó que la nueva versión del modelo presenta un menor rendimiento en comparación al original.
+        Dicho empeoramiento puede deberse a: \vspace{0.2cm}
         \begin{itemize}
             \item <1-> Baja Correlación Lineal: El modelo busca relaciones directas: "Mientras más triste, más popular". Pero la música
             no funciona de esa manera. De modo que, las variables nuevas pueden haber aportado más ruido que alguna mejora directa en la
@@ -818,45 +818,33 @@
 \section[Estrategia Basada en Evidencia para el Éxito de Contenidos]{Estrategia Basada en Evidencia para el Éxito de Contenidos}
 %----- Lámina 27: Conclusiones ---
 \begin{frame}{Conclusiones}
-    En base al estudio realizado, se tiene entonces que, aunque el modelo de regresión lineal proporciona una aproximación inicial para 
+    Con base en el estudio realizado, se tiene entonces que, el modelo de regresión lineal proporciona una aproximación inicial para 
     entender la relación entre los atributos técnicos de las canciones y su popularidad. \vspace{0.5em}
 
-    Sin embargo, esta aproximación inicial es valiosa para identificar tendencias generales y patrones en los datos. Entre estos patrones, 
+    Esta aproximación inicial es valiosa para identificar tendencias generales y patrones en los datos. Entre estos patrones, 
     se destacan los siguientes: \vspace{0.5em}
 
     \begin{itemize}
         \item <1-> El oyente busca una experiencia sonora vibrante.
         \vspace{0.5em}
-        \item <2-> La gran popularidad se concentra en canciones que no sean instrumentales.
+        \item <1-> La gran popularidad se concentra en canciones que no sean instrumentales.
         \vspace{0.5em}
-        \item <3-> Existe un preferencia por grabaciones de estudio y sonidos menos orgánicos.
+        \item <1-> Existe un preferencia por grabaciones de estudio y sonidos menos orgánicos.
         \vspace{0.5em}
     \end{itemize}
 
     Este modelo puede ser una herramienta útil para Spotify al momento de tomar decisiones estratégicas sobre qué canciones promover o recomendar 
     a los usuarios.
+
 \end{frame}
 
-
-\begin{frame}{Resumen}
-    \begin{columns}
-        \column{.25\textwidth}
-        \column{.5\textwidth}
-        \begin{block}{Miner\'ia de datos}
-        Descubrir conocimiento y/o patrones a partir de datos.*
-    \end{block}
-    \column{.25\textwidth}
-\end{columns}
-    
-\end{frame}
-%-----
 \begin{frame}{Referencias}
 \noindent\printbibliography
 \end{frame}
 
 \begin{frame}
  \begin{center}
-		{\Huge ¡MuchasGracias!}\\
+		{\Huge ¡Muchas Gracias!}\\
 		\bigskip\bigskip % Vertical whitespace
 		
 		{\LARGE dm-25.ucv.ai}
